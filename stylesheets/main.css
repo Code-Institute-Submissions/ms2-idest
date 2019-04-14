@@ -9,11 +9,112 @@
   .form-group #autocomplete {
     width: 100%; }
 
+/*---------------------------Fonts*/
+/*---------------------------Margins and paddings*/
+/*---------------------------Media Queries*/
 #poi-buttons {
   border-bottom: solid; }
 
 .btn {
   width: 150px;
   margin: 15px; }
+
+/*---------------------------Fonts*/
+/*---------------------------Margins and paddings*/
+/*---------------------------Media Queries*/
+/*---------------------------Fonts*/
+/*---------------------------Margins and paddings*/
+/*---------------------------Media Queries*/
+.footer-container {
+  background-color: #343F4B;
+  padding: 15px;
+  text-align: center;
+  display: block; }
+
+.copyright a {
+  color: #ffffff; }
+
+.social-links
+a {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none; }
+
+.social-links
+a
+.fa-facebook-f:hover {
+  color: #3b5998; }
+
+.fa-instagram:hover {
+  color: #833AB4; }
+
+.fa-twitter:hover {
+  color: #1da1f2; }
+
+/*---------------------------Fonts*/
+/*---------------------------Margins and paddings*/
+/*---------------------------Media Queries*/
+/*---------------------------Map*/
+.map-class {
+  position: sticky;
+  position: -webkit-sticky;
+  /* Safari */
+  top: 0;
+  width: 40%;
+  float: right; }
+
+#map {
+  height: 400px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: none; }
+  @media (min-width: 767px) {
+    #map {
+      display: block; } }
+
+/*---------------------------Listing*/
+#listing {
+  margin-top: 15px;
+  cursor: pointer;
+  overflow-x: scroll; }
+
+.placeIcon {
+  width: 25px;
+  height: 35px; }
+
+.card {
+  display: block;
+  margin-bottom: 5px; }
+
+td {
+  padding: 15px;
+  font-size: 12px;
+  text-align: center; }
+  @media (min-width: 778px) {
+    td {
+      font-size: 25px; } }
+  @media (min-width: 992px) {
+    td {
+      font-size: 32px; } }
+
+/*---------------------------InfoWindow*/
+.iw_table_row {
+  height: 18px; }
+
+.iw_attribute_name {
+  font-weight: bold;
+  text-align: right; }
+
+.iw_table_icon {
+  text-align: right; }
+
+.icon {
+  width: 24px;
+  height: 24px; }
+
+#rating {
+  font-size: 12px;
+  font-family: Arial Unicode MS; }
 
 /*# sourceMappingURL=main.css.map */
