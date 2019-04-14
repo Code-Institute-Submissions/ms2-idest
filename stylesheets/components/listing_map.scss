@@ -1,0 +1,66 @@
+@import "../globals/variables";
+@import "../globals/colors";
+
+/*---------------------------Map*/
+.map-class {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    width: 40%;
+    float: right;
+}
+#map {
+    height: 400px;
+    margin-bottom: $standard-margin;
+    margin-top: $standard-margin;
+    display: none;
+    @media (min-width: $small-screen) {
+        display: block;
+    }
+}
+
+/*---------------------------Listing*/
+#listing {
+    margin-top: $standard-margin;
+    cursor: pointer;
+    overflow-x: scroll; 
+}
+.placeIcon {
+    width: 25px;
+    height: 35px;
+}
+.card {
+    display: block;
+    margin-bottom: 5px;
+}
+td {
+    padding: $standard-padding;
+    font-size: $font-small;
+    text-align: center;
+    @media (min-width: $medium-screen) {
+        font-size: $font-medium;
+    }
+    @media (min-width: $large-screen) {
+        font-size: $font-large;
+    }
+}
+
+/*---------------------------InfoWindow*/
+.iw_table_row {
+    height: 18px;
+}
+.iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+}
+.iw_table_icon {
+    text-align: right;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+}
+#rating {
+    font-size: $font-small;
+    font-family: Arial Unicode MS;
+}
