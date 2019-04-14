@@ -1,0 +1,32 @@
+@import "../globals/variables";
+@import "../globals/colors";
+
+.footer-container {
+    background-color: #343F4B;
+    padding: $standard-padding;
+    text-align: center;
+    display: block;
+}
+.copyright a {
+    color: $white; 
+}
+.social-links 
+    a {
+        color: $white;
+        font-size: 20px;
+        padding: 5px 5px 5px 5px;
+        text-decoration: none;
+    }
+
+.social-links
+    a 
+        .fa-facebook-f:hover {
+            color: $facebook;
+        }
+        .fa-instagram:hover {
+            color: $instagram;
+        }
+        .fa-twitter:hover {
+            color: $twitter;
+        }
+
