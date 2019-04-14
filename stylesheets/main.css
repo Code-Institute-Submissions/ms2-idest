@@ -1,0 +1,19 @@
+.navbar {
+  border-bottom: solid; }
+
+#country {
+  width: 100%; }
+
+.form-group {
+  margin-top: 15px; }
+  .form-group #autocomplete {
+    width: 100%; }
+
+#poi-buttons {
+  border-bottom: solid; }
+
+.btn {
+  width: 150px;
+  margin: 15px; }
+
+/*# sourceMappingURL=main.css.map */
