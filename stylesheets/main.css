@@ -88,8 +88,12 @@ a
   overflow-x: scroll; }
 
 .placeIcon {
+  display: none;
   width: 25px;
   height: 35px; }
+  @media (min-width: 778px) {
+    .placeIcon {
+      display: block; } }
 
 .card {
   display: block;
@@ -107,6 +111,12 @@ td {
       font-size: 12px; } }
 
 /*---------------------------InfoWindow*/
+#info-content
+table
+tr
+td {
+  padding: 0px; }
+
 .iw_table_row {
   height: 18px; }
 
