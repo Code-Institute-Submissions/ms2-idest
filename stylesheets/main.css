@@ -1,6 +1,11 @@
 .navbar {
   border-bottom: solid; }
 
+.navbar-light
+.navbar-brand {
+  color: #3650C8;
+  font-size: 3rem; }
+
 #country {
   width: 100%; }
 
@@ -55,6 +60,9 @@ a
 /*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
+#main {
+  background-color: #F7F7F7; }
+
 /*---------------------------Map*/
 .map-class {
   position: sticky;
@@ -93,10 +101,10 @@ td {
   text-align: center; }
   @media (min-width: 778px) {
     td {
-      font-size: 25px; } }
+      font-size: 12px; } }
   @media (min-width: 992px) {
     td {
-      font-size: 32px; } }
+      font-size: 12px; } }
 
 /*---------------------------InfoWindow*/
 .iw_table_row {

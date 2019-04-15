@@ -1,6 +1,13 @@
+@import "../globals/colors";
+
 .navbar {
     border-bottom: solid;
 }
+.navbar-light
+    .navbar-brand {
+        color: #3650C8;
+        font-size: 3rem;
+    }
 #country {
     width: 100%;
 }

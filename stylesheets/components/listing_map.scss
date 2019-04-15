@@ -1,6 +1,10 @@
 @import "../globals/variables";
 @import "../globals/colors";
 
+#main {
+    background-color: $light-grey;
+}
+
 /*---------------------------Map*/
 .map-class {
     position: sticky;
@@ -38,10 +42,10 @@ td {
     font-size: $font-small;
     text-align: center;
     @media (min-width: $medium-screen) {
-        font-size: $font-medium;
+        font-size: $font-small;
     }
     @media (min-width: $large-screen) {
-        font-size: $font-large;
+        font-size: $font-small;
     }
 }
 
