@@ -1,0 +1,30 @@
+@import "../globals/variables";
+
+/*---------------------------Navigation*/
+.navbar-nav {
+    margin: $standard-margin $standard-margin 0 0 ;
+}
+.navbar-light
+    .navbar-brand {
+            color: #3650C8;
+            font-size: 3rem;
+            display: none;
+            @media (min-width: $small-screen) {
+                display: block;
+            }
+    }
+
+/*---------------------------Background Image*/
+/* Backgroud image. Free for commercial use from https://pixabay.com/photos/city-frankfurt-cityscape-skyscraper-3660779/ */
+#landing-picture {
+  background:url("../../assests/images/newyork.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 300px;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}

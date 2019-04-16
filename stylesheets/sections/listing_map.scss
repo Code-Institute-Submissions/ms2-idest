@@ -1,8 +1,21 @@
 @import "../globals/variables";
-@import "../globals/colors";
 
 #main {
     background-color: $light-grey;
+}
+
+/*---------------------------Form*/
+#controls, .form-group {
+    margin: $standard-margin;
+    display: inline-block;
+}
+.form-group {
+    margin: $standard-margin;
+    display: inline-block;
+}
+
+#country, #autocomplete {
+    min-width: 250px;
 }
 
 /*---------------------------Map*/
@@ -20,6 +33,18 @@
     display: none;
     @media (min-width: $small-screen) {
         display: block;
+    }
+}
+
+/*---------------------------POI buttons*/
+.poi-buttons {
+    margin: 10px;
+}
+.btn  {
+    width: 150px;
+    border: 1px solid;
+    @media (min-width: $small-screen) {
+        margin: 5px;
     }
 }
 
