@@ -198,49 +198,63 @@ function addResult(result, i) {
     var results = document.getElementById('results');
     var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
     var markerIcon = MARKER_PATH + markerLetter + '.png';;
-
-    var tr = document.createElement('tr');
-    tr.className = 'card';
-    tr.onclick = function() {
+    
+    //Creating the card div
+    var card = document.createElement('div');
+    card.className = 'card';
+    card.onclick = function() {
         google.maps.event.trigger(markers[i], 'click');
     };
-
-    var iconTd = document.createElement('td');
-    var nameTd = document.createElement('td');
-    var icon = document.createElement('img');
-    var addressTd = document.createElement('td');
-    var ratingTd = document.createElement('td');
     
+    var row = document.createElement('div');
+    row.setAttribute('class', 'row');
+    
+    //Creating marker to go into a card.
+    var iconFlag = document.createElement('div');
+    iconFlag.setAttribute("class","hidden-xs hidden-sm col-md-2 col-lg-2 d-flex");
+    var icon = document.createElement('img');
     icon.src = markerIcon;
     icon.setAttribute('class', 'placeIcon');
-    icon.setAttribute('className', 'placeIcon');
     
+    //Creating div for the name and address of the venue .
+    var listingDiv = document.createElement('div');
+    listingDiv.setAttribute('class','listing col-8');
+    var nameDiv = document.createElement('h4');
+    var addressDiv = document.createElement('p');
+    listingDiv.appendChild(nameDiv);
+    listingDiv.appendChild(addressDiv);
+    
+    //Variables for the name and address to be held in.
     var name = document.createTextNode(result.name);
+    var address = document.createTextNode(result.vicinity);
     
-    var address = document.createTextNode(result.vicinity)
-    
-    ratingTd.setAttribute('class', 'rating-title');
+    //Creating div for ratings. Check is listing has a rating
+    //and if no display 'no ratings found' message.
+    var ratingDiv = document.createElement('div');
+    ratingDiv.setAttribute('class','rating col-2 d-flex');
+    var ratingP = document.createElement('p');
+    ratingP.setAttribute('class', 'align-self-center');
     var rating;
-    var ratingTitle;
     if (result.rating) {
-        ratingTitle = document.createTextNode('Rating ');
         rating = document.createTextNode(result.rating);
         } else {
-        ratingTitle = document.createTextNode('');
         rating = document.createTextNode('No ratings found');
         }
-    iconTd.appendChild(icon);
-    nameTd.appendChild(name);
-    addressTd.appendChild(address);
-    ratingTd.appendChild(ratingTitle);
-    ratingTd.appendChild(rating);
+    //Add listing variables into there elements.
+    iconFlag.appendChild(icon);
+    nameDiv.appendChild(name);
+    addressDiv.appendChild(address);
+    ratingP.appendChild(rating);
+    ratingDiv.appendChild(ratingP);
     
-    tr.appendChild(iconTd);
-    tr.appendChild(nameTd);
-    tr.appendChild(addressTd);
-    tr.appendChild(ratingTd);
+    //Append each created element into the card to be displayed.
+    card.appendChild(row);
+    card.appendChild(iconFlag);
+    card.appendChild(listingDiv);
+    card.appendChild(ratingDiv);
     
-    results.appendChild(tr);
+    //Append the card element in to the results container on the page.
+    results.appendChild(card);
 }
 
 // Get the place details for a POI. Show the information in an info window,
