@@ -52,29 +52,13 @@
 #listing {
     margin-top: $standard-margin;
     cursor: pointer;
-    overflow-x: scroll; 
+    overflow-x: hidden; 
 }
 .placeIcon {
     display: none;
-    width: 25px;
-    height: 35px;
+    width: auto;
     @media (min-width: $medium-screen) {
         display: block;
-    }
-}
-.card {
-    display: block;
-    margin-bottom: 5px;
-}
-td {
-    padding: $standard-padding;
-    font-size: $font-small;
-    text-align: center;
-    @media (min-width: $medium-screen) {
-        font-size: $font-small;
-    }
-    @media (min-width: $large-screen) {
-        font-size: $font-small;
     }
 }
 
