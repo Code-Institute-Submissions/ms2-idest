@@ -130,30 +130,14 @@ body {
 #listing {
   margin-top: 15px;
   cursor: pointer;
-  overflow-x: scroll; }
+  overflow-x: hidden; }
 
 .placeIcon {
   display: none;
-  width: 25px;
-  height: 35px; }
+  width: auto; }
   @media (min-width: 778px) {
     .placeIcon {
       display: block; } }
-
-.card {
-  display: block;
-  margin-bottom: 5px; }
-
-td {
-  padding: 15px;
-  font-size: 12px;
-  text-align: center; }
-  @media (min-width: 778px) {
-    td {
-      font-size: 12px; } }
-  @media (min-width: 992px) {
-    td {
-      font-size: 12px; } }
 
 /*---------------------------InfoWindow*/
 #info-content
