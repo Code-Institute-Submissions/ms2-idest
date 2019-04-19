@@ -211,7 +211,7 @@ function addResult(result, i) {
     
     //Creating marker to go into a card.
     var iconFlag = document.createElement('div');
-    iconFlag.setAttribute("class","hidden-xs hidden-sm col-md-2 col-lg-2 d-flex");
+    iconFlag.setAttribute("class","col-2 d-flex");
     var icon = document.createElement('img');
     icon.src = markerIcon;
     icon.setAttribute('class', 'placeIcon');
@@ -248,10 +248,10 @@ function addResult(result, i) {
     ratingDiv.appendChild(ratingP);
     
     //Append each created element into the card to be displayed.
+    row.appendChild(iconFlag);
+    row.appendChild(listingDiv);
+    row.appendChild(ratingDiv);
     card.appendChild(row);
-    card.appendChild(iconFlag);
-    card.appendChild(listingDiv);
-    card.appendChild(ratingDiv);
     
     //Append the card element in to the results container on the page.
     results.appendChild(card);
