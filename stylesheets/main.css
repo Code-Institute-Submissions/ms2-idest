@@ -142,6 +142,9 @@ body {
   margin-top: 15px;
   cursor: pointer;
   overflow-x: hidden; }
+  @media (min-width: 750px) {
+    #listing {
+      display: block; } }
 
 .results-class {
   float: left; }
@@ -245,13 +248,13 @@ img {
     color: #ffffff; }
 
 #submit-form {
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   margin-top: 15px;
   margin-left: 15px;
   margin-bottom: 15px; }
   #submit-form:hover {
-    background-color: #ffffff;
-    color: #000000; }
+    text-decoration: underline; }
 
 /*---------------------------Alert*/
 alert-text {
