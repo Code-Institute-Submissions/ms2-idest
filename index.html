@@ -241,19 +241,19 @@
         <form id="booking-form" class="col-10 offset-1">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" id="name"required>
+              <input type="text" class="form-control" id="name">
             </div>
             <div class="form-group">
               <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" required>
+              <input type="email" class="form-control" id="email">
             </div>
             <div class="form-group">
                 <label for="telephone">Telephone Number</label>
-                <input type="tel" name="telephone" id="telephone" class="form-control" required />
+                <input type="tel" name="telephone" id="telephone" class="form-control"/>
             </div>
             <div class="form-group">
               <label for="poi-selection">Select a category</label>
-              <select class="form-control" id="poi-selection" required>
+              <select class="form-control" id="poi-selection">
                 <option>Hotel</option>
                 <option>Bar</option>
                 <option>Restaurant</option>
@@ -265,7 +265,7 @@
               <textarea class="form-control" id="details" rows="3"></textarea>
             </div>
             
-             <button class="btn btn-submit text-uppercase" type="submit">Send message</button>
+             <button id="submit-form" class="btn text-uppercase" type="submit" onClick="submitOk">Send message</button>
              
       </form>
       </div>
@@ -288,6 +288,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbWOx4Kt0jFBGSc1PGJpIFQJlzWm_Bk5s&callback=initMap&libraries=places" async defer></script>
     <!--Custom JS-->
     <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/alert.js" type="text/javascript"></script>
 </body>
 
 <footer class="footer-container">
