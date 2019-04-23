@@ -239,15 +239,15 @@
         <form id="booking-form" class="col-10 offset-1">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" id="name">
+              <input type="text" class="form-control" id="name" required>
             </div>
             <div class="form-group">
               <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email">
+              <input type="email" class="form-control" id="email" required>
             </div>
             <div class="form-group">
                 <label for="telephone">Telephone Number</label>
-                <input type="tel" name="telephone" id="telephone" class="form-control"/>
+                <input type="tel" name="telephone" id="telephone" class="form-control" required/>
             </div>
             <div class="form-group">
               <label for="poi-selection">Select a category</label>
@@ -263,7 +263,7 @@
               <textarea class="form-control" id="details" rows="3"></textarea>
             </div>
             
-             <button id="submit-form" class="btn text-uppercase" type="button">Send message</button>
+             <button id="submit-form" class="btn text-uppercase" type="submit">Send message</button>
              
       </form>
       </div>
@@ -271,12 +271,16 @@
       <div id="myModal" class="modal">
           
           <div class="modal-content">
-              <span class="close-cross">&times;</span>
-              <div class="text-center">
+              <div class="row">
+              <span class="close-cross col-1">&times;</span>
+              <div class="text-center col-11">
                   <p>Thank you!</p>
                   <p>We look forward to dicussing your next city adventure.</p>
-              </div>
+            
               <button id="close" class="btn text-uppercase" type="button">Close</button>
+              
+              </div>
+              </div>
           </div>
           
       </div>
