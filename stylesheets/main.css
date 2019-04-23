@@ -5,6 +5,10 @@
 /*---------------------------Colours*/
 /*---------------------------Navigation*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+.navbar {
+  position: sticky !important;
+  top: 1px; }
+
 .navbar-nav {
   margin: 15px 15px 0 0; }
 
@@ -77,6 +81,9 @@ body {
 .container-fluid {
   padding: 0; }
 
+.btn {
+  padding: 0.5em; }
+
 /*---------------------------/Sections*/
 /*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
@@ -103,6 +110,8 @@ body {
 
 #map {
   position: sticky !important;
+  position: -webkit-sticky;
+  /* Safari */
   top: 1px;
   width: 100%;
   float: right;
@@ -112,9 +121,6 @@ body {
   display: block; }
 
 /*---------------------------POI buttons*/
-.btn {
-  padding: 0.5em; }
-
 #hotel-button, #bar-button, #restaurant-button, #attraction-button, #reset-button, #test-button {
   width: auto; }
   @media (min-width: 750px) {
@@ -175,6 +181,39 @@ td {
   font-size: 12px;
   font-family: Arial Unicode MS; }
 
+/*---------------------------Fonts*/
+/*---------------------------Margins and paddings*/
+/*---------------------------Media Queries*/
+/*---------------------------Colours*/
+/*---------------------------About*/
+#about {
+  text-align: center; }
+  #about h1, #about h3, #about p {
+    margin: 15px;
+    padding: 15px; }
+
+/*---------------------------Inspire Carousel*/
+.carousel-item
+img {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out; }
+  @media (min-width: 750px) {
+    .carousel-item
+    img {
+      height: 400px; } }
+
+/*---------------------------Fonts*/
+/*---------------------------Margins and paddings*/
+/*---------------------------Media Queries*/
+/*---------------------------Colours*/
 /*---------------------------Booking*/
 .form-bg {
   background: url("../../assests/images/bridge.jpg");
@@ -204,42 +243,18 @@ td {
   .form-group label {
     color: #ffffff; }
 
-.btn-submit {
+#submit-form {
   color: #ffffff;
   margin-top: 15px;
   margin-left: 15px;
   margin-bottom: 15px; }
-  .btn-submit:hover {
+  #submit-form:hover {
     background-color: #ffffff;
     color: #000000; }
 
-/*---------------------------Fonts*/
-/*---------------------------Margins and paddings*/
-/*---------------------------Media Queries*/
-/*---------------------------Colours*/
-/*---------------------------About*/
-#about {
+/*---------------------------Alert*/
+alert-text {
+  font-size: 20px;
   text-align: center; }
-  #about h1, #about h3, #about p {
-    margin: 15px;
-    padding: 15px; }
-
-/*---------------------------Inspire Carousel*/
-.carousel-item
-img {
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out; }
-  @media (min-width: 750px) {
-    .carousel-item
-    img {
-      height: 400px; } }
 
 /*# sourceMappingURL=main.css.map */

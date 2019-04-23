@@ -1,6 +1,10 @@
 @import "../globals/variables";
 
 /*---------------------------Navigation*/
+.navbar {
+    position: sticky !important;
+    top: 1px;
+}
 .navbar-nav {
     margin: $standard-margin $standard-margin 0 0 ;
 }
