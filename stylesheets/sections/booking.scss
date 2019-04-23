@@ -1,0 +1,48 @@
+@import "../globals/variables";
+
+/*---------------------------Booking*/
+.form-bg {
+    background:url("../../assests/images/bridge.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+.booking-text {
+    text-align: center;
+        h2, p {
+            margin: $standard-margin;
+            padding: $standard-padding;
+    }
+}
+#booking-form
+    .form-group {
+        display: block;
+        margin: $standard-margin;
+        label {
+            color: $white;
+        }
+} 
+#submit-form {
+    color: $white;
+    margin-top: $standard-margin;
+    margin-left: $standard-margin ;
+    margin-bottom: $standard-margin;
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+}
+
+/*---------------------------Alert*/
+alert-text {
+    font-size: 20px;
+    text-align: center;
+}
