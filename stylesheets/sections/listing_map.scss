@@ -54,9 +54,13 @@
 }
 /*---------------------------Listing*/
 #listing {
+    display: none;
     margin-top: $standard-margin;
     cursor: pointer;
     overflow-x: hidden; 
+    @media (min-width: $small-screens) {
+        display: block;
+    }
 }
 .results-class {
     float: left;

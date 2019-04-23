@@ -138,6 +138,7 @@ body {
 
 /*---------------------------Listing*/
 #listing {
+  display: none;
   margin-top: 15px;
   cursor: pointer;
   overflow-x: hidden; }
