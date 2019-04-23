@@ -31,13 +31,13 @@
         }
 } 
 #submit-form {
-    color: $white;
+    background-color: $white;
+    color: $black;
     margin-top: $standard-margin;
     margin-left: $standard-margin ;
     margin-bottom: $standard-margin;
     &:hover {
-        background-color: $white;
-        color: $black;
+        text-decoration: underline;
     }
 }
 
