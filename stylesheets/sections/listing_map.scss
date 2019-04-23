@@ -58,7 +58,7 @@
     margin-top: $standard-margin;
     cursor: pointer;
     overflow-x: hidden; 
-    @media (min-width: $small-screens) {
+    @media (min-width: $small-screen) {
         display: block;
     }
 }
