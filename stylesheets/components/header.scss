@@ -8,15 +8,20 @@
 .navbar-nav {
     margin: $standard-margin $standard-margin 0 0 ;
 }
+.navbar-light 
+    .navbar-nav 
+        .nav-link {
+            font-size: 1.3em;
+}
 .navbar-light
     .navbar-brand {
-            color: #3650C8;
-            font-size: 3rem;
-            display: none;
-            @media (min-width: $small-screen) {
-                display: block;
-            }
+        color: #3650C8;
+        font-size: 3rem;
+        display: none;
+        @media (min-width: $small-screen) {
+            display: block;
     }
+}
 
 /*---------------------------Background Image*/
 /* Backgroud image. Free for commercial use from https://pixabay.com/photos/city-frankfurt-cityscape-skyscraper-3660779/ */
