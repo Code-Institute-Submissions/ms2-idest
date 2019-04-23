@@ -339,3 +339,4 @@ function clearResults() {
     
     results = {};
 }
+
