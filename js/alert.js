@@ -1,6 +1,5 @@
 //Function to sent email. If successful display modal with thank you message.
 //If the email fails console.log error.
-
 function sendEmail (formDetails) {
     emailjs.send ("ant_cole909_gmail_com", "template_cN4Hm3Z3", {
       "from_name": formDetails.fromName.value,
@@ -11,7 +10,7 @@ function sendEmail (formDetails) {
     })
     .then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
-      restForm();
+      resetForm();
       var modal = document.getElementById('myModal');
       var closeCross = document.getElementsByClassName("close-cross")[0];
       var closeBtn  = document.getElementById('close');
