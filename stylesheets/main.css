@@ -72,6 +72,34 @@ a
 .fa-twitter:hover {
   color: #1da1f2; }
 
+#topBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 0px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  color: white;
+  /* Text color */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 1.5em;
+  /* Increase font size */ }
+  @media (min-width: 750px) {
+    #topBtn {
+      padding: 15px;
+      font-size: 2em;
+      right: 5px; } }
+  #topBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */ }
+
 /*---------------------------/Globals*/
 /*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
