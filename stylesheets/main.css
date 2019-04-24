@@ -148,9 +148,12 @@ body {
 
 #map {
   position: sticky !important;
-  position: -webkit-sticky;
+  position: -webkit-sticky !important;
   /* Safari */
-  top: 1px;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 15px;
   width: 100%;
   float: right;
   height: 400px;
