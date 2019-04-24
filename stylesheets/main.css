@@ -77,6 +77,8 @@ a
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
 #topBtn {
+  background-color: #ffffff;
+  color: #000000;
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -87,8 +89,6 @@ a
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
-  color: white;
-  /* Text color */
   border-radius: 10px;
   /* Rounded corners */
   font-size: 1.5em;
@@ -101,6 +101,7 @@ a
   #topBtn:hover {
     background-color: #555;
     /* Add a dark-grey background on hover */
+    color: #ffffff;
     cursor: pointer;
     /* Add a mouse pointer on hover */ }
 
