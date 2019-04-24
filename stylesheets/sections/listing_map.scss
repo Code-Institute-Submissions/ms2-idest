@@ -24,8 +24,11 @@
 }
 #map {
     position: sticky !important;
-    position: -webkit-sticky; /* Safari */
-    top: 1px;
+    position: -webkit-sticky !important; /* Safari */
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: $standard-padding;
     width: 100%;
     float: right;
     height: 400px;
