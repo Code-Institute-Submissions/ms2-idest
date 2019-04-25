@@ -11,10 +11,14 @@
 }
 .navbar-brand
     img{
-        width: 9em;
-        height: 5em;
+        width: 5em;
+        height: 3em;
         &:hover {
             cursor: pointer;
+        }
+        @media (min-width: $small-screen) {
+            width: 9em;
+            height: 5em;
         }
     }
 
