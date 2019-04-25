@@ -170,6 +170,11 @@ The website is deployed using GitHub pages [iDest](https://anthonynicklin.github
 
 ### Images ###
 
+Logo
+Stamp picture was taken from [Pixaby](https://pixabay.com/vectors/stamp-postage-post-vintage-postal-303749/) under free commercial license.
+The writing of 'iDest' was screenshooted from Free Google fonts [font](https://fonts.google.com/specimen/Special+Elite), Special Elite and 
+then overlayed using Abode Xd to create the final image.
+
 Markers
 Flags[Icons](https://icons8.com/icon/set/flag/color)
 
