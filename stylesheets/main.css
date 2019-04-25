@@ -5,10 +5,6 @@
 /*---------------------------Colours*/
 /*---------------------------Navigation*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-.navbar {
-  position: sticky !important;
-  top: 1px; }
-
 .navbar-nav {
   margin: 15px 15px 0 0; }
 
@@ -17,15 +13,13 @@
 .nav-link {
   font-size: 1.3em; }
 
-.navbar-light
-.navbar-brand {
-  color: #3650C8;
-  font-size: 3rem;
-  display: none; }
-  @media (min-width: 750px) {
-    .navbar-light
-    .navbar-brand {
-      display: block; } }
+.navbar-brand
+img {
+  width: 9em;
+  height: 5em; }
+  .navbar-brand
+  img:hover {
+    cursor: pointer; }
 
 /*---------------------------Background Image*/
 /* Backgroud image. Free for commercial use from https://pixabay.com/photos/city-frankfurt-cityscape-skyscraper-3660779/ */
