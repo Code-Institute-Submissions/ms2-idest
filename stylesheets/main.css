@@ -45,20 +45,27 @@ img {
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
 .footer-container {
-  background-color: #343F4B;
+  background-color: #fafafa;
   padding: 15px;
-  text-align: center;
   display: block; }
 
-.copyright a {
-  color: #ffffff; }
+#logo-footer
+a
+img {
+  width: 5em;
+  height: 3em; }
 
-.social-links
-a {
-  color: #ffffff;
-  font-size: 20px;
-  padding: 5px 5px 5px 5px;
-  text-decoration: none; }
+.copyright a {
+  float: right;
+  color: #000000; }
+
+.social-links {
+  text-align: center; }
+  .social-links a {
+    color: #000000;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none; }
 
 .social-links
 a
@@ -259,6 +266,9 @@ img {
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
 /*---------------------------Booking*/
+#book {
+  border-bottom: 1px solid #A9A9A9; }
+
 .form-bg {
   background: url("../../assests/images/bridge.jpg");
   background-position: center;
