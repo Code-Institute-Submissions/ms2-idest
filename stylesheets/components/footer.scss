@@ -3,6 +3,7 @@
 .footer-container {
     background-color: #fafafa;
     padding: $standard-padding;
+    text-align: center;
     display: block;
 }
 #logo-footer
@@ -10,13 +11,16 @@
         img {
             width: 5em;
             height: 3em;
-}
+            @media(min-width: $small-screen) {
+                float: left;
+} }
 .copyright a {
-    float: right;
     color: $black; 
+    @media (min-width: $small-screen) {
+        float: right;
+    }
 }
 .social-links {
-    text-align: center;
         a {
             color: $black;
             font-size: 20px;
