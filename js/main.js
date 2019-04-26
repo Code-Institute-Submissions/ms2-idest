@@ -101,23 +101,25 @@ function initMap() {
 // Also center and zoom the map on the given country.
 function setAutocompleteCountry() {
     var country = document.getElementById('country').value;
-        if (country == 'all') {
-          autocomplete.setComponentRestrictions({'country': []});
-          map.setCenter({lat: 15, lng: 0});
-          map.setZoom(2);
+    
+    if (country == 'all') {
+        autocomplete.setComponentRestrictions({'country': []});
+        map.setCenter({lat: 15, lng: 0});
+        map.setZoom(2);
         } else {
-          autocomplete.setComponentRestrictions({'country': country});
-          map.setCenter(countries[country].center);
-          map.setZoom(countries[country].zoom);
+            autocomplete.setComponentRestrictions({'country': country});
+            map.setCenter(countries[country].center);
+            map.setZoom(countries[country].zoom);
         }
-        clearResults();
-        clearMarkers();
+    clearResults();
+    clearMarkers();
 }
 
 // When the user selects a city, get the place details for the city and
 // zoom the map in on the city.
 function onPlaceChanged() {
     var place = autocomplete.getPlace();
+    
     if (place.geometry) {
         map.panTo(place.geometry.location);
         map.setZoom(15);
@@ -126,7 +128,7 @@ function onPlaceChanged() {
     }
 }
 
-// Listener for hotel submit button
+// Listener for POI buttons
 var hotel = document.getElementById('hotel-button').addEventListener('click', checkHotels);
 var bar = document.getElementById('bar-button').addEventListener('click', checkBars);
 var restaurant = document.getElementById('restaurant-button').addEventListener('click', checkRestaurants);
@@ -135,9 +137,8 @@ var attraction = document.getElementById('attraction-button').addEventListener('
 var search = {
         types:[]
     };
-    
+//Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.   
 function checkHotels() {
-//Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
     hideLogo();
     search.types = [];
     search.bounds = map.getBounds();
@@ -145,34 +146,38 @@ function checkHotels() {
     searchPoi();
 }
 
-function checkBars() {
 //Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
-    hideLogo()
+function checkBars() {
+    hideLogo();
     search.types = [];
     search.bounds = map.getBounds();
     search.types.push('bar');
     searchPoi();
 }
 
-function checkRestaurants() {
 //Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
-    hideLogo()
+function checkRestaurants() {
+    hideLogo();
     search.types = [];
     search.bounds = map.getBounds();
     search.types.push('restaurant');
     searchPoi();
 }
 
-function checkAttractions() {
 //Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
-    hideLogo()
+function checkAttractions() {
+    hideLogo();
     search.types = [];
     search.bounds = map.getBounds();
     search.types.push('point_of_interest');
     searchPoi();
 }
 
-//Preforms the search adding the correct value to the types array first.
+//Preforms the search passing in the search variable.
+//If status is OK clear functions are called to clear any results and map markers.
+//Creats a marker and loops through the results array assigning a letter to the 
+//end of the marker file path in order to retrieve the correct marker.
+//Adds listener to the markers and then calls addResult function.
 function searchPoi() {
     places.nearbySearch(search, function(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -189,8 +194,7 @@ function searchPoi() {
                     animation: google.maps.Animation.DROP,
                     icon: markerIcon
                 });
-                // If the user clicks a hotel marker, show the details of that hotel
-                // in an info window.
+                // If the user clicks a marker, show the details in an info window.
                 markers[i].placeResult = results[i];
                 google.maps.event.addListener(markers[i], 'click', showInfoWindow);
                 setTimeout(dropMarker(i), i * 100);
@@ -200,20 +204,24 @@ function searchPoi() {
     });
 }
 
+//Drops markers at different intervals when multiple markers are being dropped.
 function dropMarker(i) {
     return function() {
         markers[i].setMap(map);
     };
 }
 
+//Takes the results of the search and builds up the results cards to display
+//assigning a marker to each card. 
 function addResult(result, i) {
     var results = document.getElementById('results');
     var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
     var markerIcon = MARKER_PATH + markerLetter + '.png';;
     
-    //Creating the card div
+    //Creating the card div.
     var card = document.createElement('div');
     card.className = 'card';
+    //Listener to display infor window on the map.
     card.onclick = function() {
         google.maps.event.trigger(markers[i], 'click');
     };
@@ -228,7 +236,7 @@ function addResult(result, i) {
     icon.src = markerIcon;
     icon.setAttribute('class', 'placeIcon');
     
-    //Creating div for the name and address of the venue .
+    //Creating div for the name and address of the venue.
     var listingDiv = document.createElement('div');
     listingDiv.setAttribute('class','listing col-8');
     var nameDiv = document.createElement('h4');
@@ -240,8 +248,8 @@ function addResult(result, i) {
     var name = document.createTextNode(result.name);
     var address = document.createTextNode(result.vicinity);
     
-    //Creating div for ratings. Check is listing has a rating
-    //and if no display 'no ratings found' message.
+    //Creating div for ratings. Check the listing has a rating
+    //and if not display empty string.
     var ratingDiv = document.createElement('div');
     ratingDiv.setAttribute('class','rating col-2 d-flex');
     var ratingP = document.createElement('p');
@@ -250,9 +258,9 @@ function addResult(result, i) {
     if (result.rating) {
         rating = document.createTextNode(result.rating);
         } else {
-        rating = document.createTextNode('No ratings found');
+        rating = document.createTextNode('');
         }
-    //Add listing variables into there elements.
+    //Add listing variables into their elements.
     iconFlag.appendChild(icon);
     nameDiv.appendChild(name);
     addressDiv.appendChild(address);
@@ -269,7 +277,7 @@ function addResult(result, i) {
     results.appendChild(card);
 }
 
-//Have the iDest logo disappear when any of the check functions are called
+//Have the iDest logo disappear when any of the check functions are called.
 function hideLogo() {
     document.getElementById("logo-overlay-id").style.display = "none";
 }
@@ -279,6 +287,7 @@ function hideLogo() {
 // anchored on the marker for the POI that the user selected.
 function showInfoWindow() {
     var marker = this;
+    
     places.getDetails({placeId: marker.placeResult.place_id},
         function(place, status) {
             if (status !== google.maps.places.PlacesServiceStatus.OK) {
@@ -305,11 +314,12 @@ function buildIWContent(place) {
         document.getElementById('iw-phone-row').style.display = 'none';
     }
 
-// Assign a five-star rating to the hotel, using a black star ('&#10029;')
-// to indicate the rating the hotel has earned, and a white star ('&#10025;')
+// Assign a five-star rating to the POI, using a black star ('&#10029;')
+// to indicate the rating the POI has earned, and a white star ('&#10025;')
 // for the rating points not achieved.
     if (place.rating) {
         var ratingHtml = '';
+        
         for (var i = 0; i < 5; i++) {
             if (place.rating < (i + 0.5)) {
               ratingHtml += '&#10025;';
@@ -328,6 +338,7 @@ function buildIWContent(place) {
         if (place.website) {
           var fullUrl = place.website;
           var website = hostnameRegexp.exec(place.website);
+          
           if (website === null) {
             website = 'http://' + place.website + '/';
             fullUrl = website;
@@ -339,6 +350,7 @@ function buildIWContent(place) {
         }
       }
 
+//Clear markers off the map.
 function clearMarkers() {
     for (var i = 0; i < markers.length; i++) {
         if (markers[i]) {
@@ -348,9 +360,10 @@ function clearMarkers() {
     markers = [];
 }
 
+//Clear results from the listing section.
 function clearResults() {
-    //Clear results
     var removeList = document.getElementById('results');
+    
     while (removeList.firstChild) {
         removeList.removeChild(removeList.firstChild);
     }
