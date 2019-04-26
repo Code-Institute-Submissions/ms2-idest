@@ -3,7 +3,7 @@ var markers = [];
 var results = {};
 var autocomplete;
 var countryRestrict = {'country': 'uk'};
-var MARKER_PATH = '../assests/images/markers/red_marker';
+var MARKER_PATH = '/ms2-idest/assests/images/markers/red_marker';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
 var countries = {

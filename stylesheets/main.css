@@ -29,7 +29,7 @@ img {
 /*---------------------------Background Image*/
 /* Backgroud image. Free for commercial use from https://pixabay.com/photos/city-frankfurt-cityscape-skyscraper-3660779/ */
 #landing-picture {
-  background: url("https://github.com/AnthonyNicklin/ms2-idest/assests/images/newyork.jpg");
+  background: url("/ms2-idest/assests/images/newyork.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -266,7 +266,7 @@ img {
   border-bottom: 1px solid #A9A9A9; }
 
 .form-bg {
-  background: url("../../assests/images/bridge.jpg");
+  background: url("/ms2-idest/assests/images/bridge.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
