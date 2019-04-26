@@ -1,4 +1,4 @@
-//Function to sent email. If successful display modal with thank you message.
+//Function to send email. If successful display modal with thank you message.
 //If the email fails console.log error.
 function sendEmail (formDetails) {
     emailjs.send ("ant_cole909_gmail_com", "template_cN4Hm3Z3", {
