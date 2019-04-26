@@ -56,6 +56,15 @@
     }
 }
 /*---------------------------Listing*/
+.logo-overlay {
+    width: 25em;
+    height: 20em;
+    margin-top: 3em;
+    display: none;
+    @media (min-width: $small-screen) {
+        display: block;
+    }
+}
 #listing {
     display: none;
     margin-top: $standard-margin;

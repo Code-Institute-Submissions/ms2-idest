@@ -5,6 +5,7 @@
 /*---------------------------Colours*/
 /*---------------------------Navigation*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
 .navbar-nav {
   margin: 15px 15px 0 0; }
 
@@ -188,6 +189,15 @@ body {
     padding: 15px; }
 
 /*---------------------------Listing*/
+.logo-overlay {
+  width: 25em;
+  height: 20em;
+  margin-top: 3em;
+  display: none; }
+  @media (min-width: 750px) {
+    .logo-overlay {
+      display: block; } }
+
 #listing {
   display: none;
   margin-top: 15px;
