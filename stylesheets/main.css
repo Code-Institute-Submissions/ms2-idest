@@ -29,7 +29,7 @@ img {
 /*---------------------------Background Image*/
 /* Backgroud image. Free for commercial use from https://pixabay.com/photos/city-frankfurt-cityscape-skyscraper-3660779/ */
 #landing-picture {
-  background: url("../../assests/images/newyork.jpg");
+  background: url("https://github.com/AnthonyNicklin/ms2-idest/blob/master/assests/images/newyork.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
