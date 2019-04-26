@@ -13,23 +13,18 @@
             height: 3em;
             @media(min-width: $small-screen) {
                 float: left;
-} }
+}   }
 .copyright a {
     color: $black; 
     @media (min-width: $small-screen) {
         float: right;
-    }
-}
+}  }
 .social-links {
-        a {
-            color: $black;
-            font-size: 20px;
-            padding: 5px 5px 5px 5px;
-            text-decoration: none;
-}    }
-
-.social-links
-    a 
+    a {
+        color: $black;
+        font-size: 20px;
+        padding: 5px 5px 5px 5px;
+        text-decoration: none;
         .fa-facebook-f:hover {
             color: $facebook;
         }
@@ -40,3 +35,6 @@
             color: $twitter;
         }
 
+}   }
+ 
+        

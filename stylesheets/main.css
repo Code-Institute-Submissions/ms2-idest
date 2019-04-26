@@ -73,17 +73,12 @@ img {
   font-size: 20px;
   padding: 5px 5px 5px 5px;
   text-decoration: none; }
-
-.social-links
-a
-.fa-facebook-f:hover {
-  color: #3b5998; }
-
-.fa-instagram:hover {
-  color: #833AB4; }
-
-.fa-twitter:hover {
-  color: #1da1f2; }
+  .social-links a .fa-facebook-f:hover {
+    color: #3b5998; }
+  .social-links a .fa-instagram:hover {
+    color: #833AB4; }
+  .social-links a .fa-twitter:hover {
+    color: #1da1f2; }
 
 /*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
