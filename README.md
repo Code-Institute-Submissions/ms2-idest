@@ -1,17 +1,18 @@
 # iDest #
 ## Interactive Front-end Web Development Project ##
 
+![idest Logo](assests/images/idest_logo.png)
 
 ## Aim ##
 
-The aim of this project was to create and build a Single-Page-Application (SPA) interactive front-end website using that calls on Google 
+The aim of this project was to create and build a Single-Page-Application (SPA) interactive front-end website using Google 
 Maps API [iDest](https://anthonynicklin.github.io/ms2-idest/). The SPA would allow users to search for their next holiday destination and 
 help users find attractions, hotels, bars and restaurants.
 
 ## UX ##
 
 Starting with a mobile first design approach to this project I started creating mockups and wireframes for mobile and small screens. I then moved onto creating mockups 
-and wireframes for medium and larger screens. The design of the site is modern, image rich, easy to navigate and use. 
+and wireframes for medium and larger screens. The design of the site is modern, image rich, and easy to navigate and use. 
 
 Below are user stories that were conducted in order to gain clear goals that needed to be achieved for this website.
 1. I want to chose the country and city where my city break will be.
@@ -21,7 +22,7 @@ Below are user stories that were conducted in order to gain clear goals that nee
 5. I want to be able to control the map.
 6. With a click or tap have more information displayed about the POI.
 7. On large screens show the results displayed in a formative way.
-8. I would like a form I can fill in in order to contact somone to discuss my break and book a trip.
+8. I would like a form I can fill in in order to contact someone to discuss my break and book a trip.
 
 
 The navigation bar is responsive having break points for smaller, medium and large screens. The navigation links disapear on screen width's below 992 pixals and a burger menu icon appears 
