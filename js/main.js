@@ -130,6 +130,7 @@ var search = {
     
 function checkHotels() {
 //Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
+    hideLogo();
     search.types = [];
     search.bounds = map.getBounds();
     search.types.push('lodging');
@@ -138,6 +139,7 @@ function checkHotels() {
 
 function checkBars() {
 //Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
+    hideLogo()
     search.types = [];
     search.bounds = map.getBounds();
     search.types.push('bar');
@@ -146,6 +148,7 @@ function checkBars() {
 
 function checkRestaurants() {
 //Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
+    hideLogo()
     search.types = [];
     search.bounds = map.getBounds();
     search.types.push('restaurant');
@@ -154,6 +157,7 @@ function checkRestaurants() {
 
 function checkAttractions() {
 //Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
+    hideLogo()
     search.types = [];
     search.bounds = map.getBounds();
     search.types.push('point_of_interest');
@@ -256,6 +260,12 @@ function addResult(result, i) {
     //Append the card element in to the results container on the page.
     results.appendChild(card);
 }
+
+//Have the iDest logo disappear when any of the check functions are called
+function hideLogo() {
+    document.getElementById("logo-overlay-id").style.display = "none";
+}
+
 
 // Get the place details for a POI. Show the information in an info window,
 // anchored on the marker for the POI that the user selected.
