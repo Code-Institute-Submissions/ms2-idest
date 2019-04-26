@@ -31,8 +31,16 @@ var countries = {
         center: {lat: 23.6, lng: -102.5},
         zoom: 4
     },
+    'ng': {
+        center: {lat: 9.1, lng: 8.7},
+        zoom: 5
+    },
     'nz': {
         center: {lat: -40.9, lng: 174.9},
+        zoom: 5
+    },
+    'ir': {
+        center: {lat: 53.3, lng: -6.2},
         zoom: 5
     },
     'it': {
