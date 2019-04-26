@@ -2,22 +2,22 @@
 
 #topBtn {
     background-color: $white;
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 5em; /* Place the button at the bottom of the page */
-    right: 0px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border-radius: 10px; /* Rounded corners */
+    display: none; 
+    position: fixed; 
+    bottom: 5em; 
+    right: 0px; 
+    z-index: 99; 
+    border-radius: 10px; 
     border: 2px solid black;
     @media (min-width: $small-screen) {
         padding: 0.2em;
         right: 5px;
     }
     &:hover {
-        background-color: $black; /* Add a dark-grey background on hover */
-        cursor: pointer; /* Add a mouse pointer on hover */
+        background-color: $black; 
+        cursor: pointer; 
         .fa-arrow-up {
             color: $white;
         }
-    }
-}
+}   }
+
