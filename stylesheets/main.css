@@ -1,12 +1,11 @@
 /*---------------------------/Components*/
-/*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
 /*---------------------------Navigation*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 .navbar-nav {
-  margin: 15px 15px 0 0; }
+  margin: 1em 1em 0 0; }
 
 .navbar-light
 .navbar-nav
@@ -40,13 +39,12 @@ img {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out; }
 
-/*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
 .footer-container {
   background-color: #fafafa;
-  padding: 15px;
+  padding: 1em;
   text-align: center;
   display: block; }
 
@@ -79,7 +77,6 @@ img {
   .social-links a .fa-twitter:hover {
     color: #1da1f2; }
 
-/*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
@@ -91,7 +88,7 @@ img {
   right: 0px;
   z-index: 99;
   border-radius: 10px;
-  border: 2px solid black; }
+  border: 0.063em solid black; }
   @media (min-width: 600px) {
     #topBtn {
       padding: 0.2em;
@@ -103,7 +100,6 @@ img {
       color: #ffffff; }
 
 /*---------------------------/Globals*/
-/*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
@@ -120,7 +116,6 @@ body {
   padding: 0.5em; }
 
 /*---------------------------/Sections*/
-/*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
@@ -132,11 +127,11 @@ body {
 
 /*---------------------------Form*/
 #controls, .form-group {
-  margin: 15px;
+  margin: 1em;
   display: inline-block; }
 
 .form-group {
-  margin: 15px;
+  margin: 1em;
   display: inline-block; }
 
 #country, #autocomplete {
@@ -145,11 +140,11 @@ body {
 /*---------------------------Map*/
 #map {
   position: fixed;
-  top: 15px;
+  top: 1em;
   width: 100%;
   height: 400px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 1em;
+  margin-top: 1em;
   display: block; }
   @media (min-width: 766px) {
     #map {
@@ -170,10 +165,10 @@ body {
 #find {
   text-align: center; }
   #find h4 {
-    margin-top: 15px; }
+    margin-top: 1em; }
   #find .find-text {
-    margin: 15px;
-    padding: 15px; }
+    margin: 1em;
+    padding: 1em; }
 
 /*---------------------------Listing*/
 .logo-overlay {
@@ -187,7 +182,7 @@ body {
 
 #listing {
   display: block;
-  margin-top: 15px;
+  margin-top: 1em;
   cursor: pointer;
   overflow-x: hidden; }
 
@@ -195,12 +190,12 @@ body {
   float: left; }
 
 .placeIcon {
-  width: 45px;
-  height: 40px;
-  margin: 15px; }
+  width: 2.8em;
+  height: 2.5em;
+  margin: 1em; }
 
 .card {
-  margin-bottom: 10px;
+  margin-bottom: 0.623em;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); }
 
 .card-img {
@@ -214,7 +209,7 @@ td {
   padding: 0px; }
 
 .iw_table_row {
-  height: 18px; }
+  height: 1.125em; }
 
 .iw_attribute_name {
   font-weight: bold;
@@ -224,10 +219,9 @@ td {
   text-align: right; }
 
 .icon {
-  width: 24px;
-  height: 24px; }
+  width: 1.5em;
+  height: 1.5em; }
 
-/*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
@@ -235,8 +229,8 @@ td {
 #about {
   text-align: center; }
   #about h1, #about h3, #about p {
-    margin: 15px;
-    padding: 15px; }
+    margin: 1em;
+    padding: 1em; }
 
 /*---------------------------Carousel*/
 .carousel-item
@@ -256,7 +250,6 @@ img {
     img {
       height: 400px; } }
 
-/*---------------------------Fonts*/
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
@@ -281,13 +274,13 @@ img {
 .booking-text {
   text-align: center; }
   .booking-text h2, .booking-text p {
-    margin: 15px;
-    padding: 15px; }
+    margin: 1em;
+    padding: 1em; }
 
 #booking-form
 .form-group {
   display: block;
-  margin: 15px; }
+  margin: 1em; }
   #booking-form
   .form-group label {
     color: #ffffff; }
@@ -295,9 +288,9 @@ img {
 #submit-form {
   background-color: #ffffff;
   color: #000000;
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-bottom: 15px; }
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em; }
   #submit-form:hover {
     text-decoration: underline;
     cursor: pointer; }
