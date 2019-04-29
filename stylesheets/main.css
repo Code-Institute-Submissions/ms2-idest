@@ -173,7 +173,7 @@ body {
 /*---------------------------Listing*/
 .logo-overlay {
   display: none;
-  margin-top: 3em; }
+  margin: 5em auto; }
   @media (min-width: 766px) {
     .logo-overlay {
       display: block;
