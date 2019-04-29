@@ -56,13 +56,14 @@
 
 /*---------------------------Listing*/
 .logo-overlay {
-    width: 25em;
-    height: 20em;
-    margin-top: 3em;
     display: none;
-    @media (min-width: $small-screen) {
+    margin-top: 3em;
+     @media (min-width: $medium-screen) {
         display: block;
-}   }
+        width: 20em;
+        height: 15em;
+    }
+}
 #listing {
     display: none;
     margin-top: $standard-margin;
