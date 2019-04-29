@@ -151,7 +151,7 @@ body {
   margin-bottom: 15px;
   margin-top: 15px;
   display: block; }
-  @media (min-width: 768px) {
+  @media (min-width: 766px) {
     #map {
       position: sticky !important;
       position: -webkit-sticky !important;
@@ -179,7 +179,7 @@ body {
 .logo-overlay {
   display: none;
   margin-top: 3em; }
-  @media (min-width: 768px) {
+  @media (min-width: 766px) {
     .logo-overlay {
       display: block;
       width: 20em;
