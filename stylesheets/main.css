@@ -143,23 +143,21 @@ body {
   min-width: 250px; }
 
 /*---------------------------Map*/
-.map-class {
-  float: right; }
-
 #map {
-  position: sticky !important;
-  position: -webkit-sticky !important;
-  /* Safari */
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
+  position: fixed;
   top: 15px;
   width: 100%;
-  float: right;
   height: 400px;
   margin-bottom: 15px;
   margin-top: 15px;
   display: block; }
+  @media (min-width: 992px) {
+    #map {
+      position: sticky !important;
+      position: -webkit-sticky !important;
+      position: -moz-sticky;
+      position: -ms-sticky;
+      position: -o-sticky; } }
 
 /*---------------------------POI buttons*/
 #hotel-button, #bar-button, #restaurant-button, #attraction-button, #reset-button, #test-button {
@@ -188,13 +186,10 @@ body {
       height: 15em; } }
 
 #listing {
-  display: none;
+  display: block;
   margin-top: 15px;
   cursor: pointer;
   overflow-x: hidden; }
-  @media (min-width: 600px) {
-    #listing {
-      display: block; } }
 
 .results-class {
   float: left; }
