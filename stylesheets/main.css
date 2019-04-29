@@ -179,7 +179,7 @@ body {
 .logo-overlay {
   display: none;
   margin-top: 3em; }
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     .logo-overlay {
       display: block;
       width: 20em;
