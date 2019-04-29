@@ -28,7 +28,7 @@
     margin-bottom: $standard-margin;
     margin-top: $standard-margin;
     display: block;
-    @media (min-width: $large-screen) {
+    @media (min-width: $medium-screen) {
         position: sticky !important;
         position: -webkit-sticky !important; 
         position: -moz-sticky;
