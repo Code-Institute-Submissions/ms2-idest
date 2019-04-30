@@ -226,11 +226,11 @@ td {
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
 /*---------------------------About*/
-#about {
-  text-align: center; }
-  #about h1, #about h3, #about p {
-    margin: 1em;
-    padding: 1em; }
+#about
+.about-text {
+  text-align: center;
+  margin: 1em;
+  padding: 1em; }
 
 /*---------------------------Carousel*/
 .carousel-item
@@ -254,9 +254,6 @@ img {
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
 /*---------------------------Booking*/
-#book {
-  border-bottom: 1px solid #A9A9A9; }
-
 .form-bg {
   background: url("/ms2-idest/assests/images/bridge.jpg");
   background-position: center;
@@ -270,10 +267,10 @@ img {
   -o-transition: all .3s ease-in-out; }
 
 .booking-text {
-  text-align: center; }
+  text-align: center;
+  color: #ffffff; }
   .booking-text h2, .booking-text p {
-    color: #ffffff;
-    padding: 1em; }
+    padding-top: 1em; }
 
 #booking-form {
   margin-bottom: 1em; }

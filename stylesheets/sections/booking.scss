@@ -1,9 +1,6 @@
 @import "../globals/variables";
 
 /*---------------------------Booking*/
-#book {
-    border-bottom: 1px solid #A9A9A9;
-}
 .form-bg {
     background:url("/ms2-idest/assests/images/bridge.jpg");
     background-position: center;
@@ -18,9 +15,9 @@
 }
 .booking-text {
     text-align: center;
+    color: $white;
         h2, p {
-            color: $white;
-            padding: $standard-padding;
+            padding-top: $standard-padding;
 }   }
 #booking-form {
     margin-bottom: $standard-margin;
