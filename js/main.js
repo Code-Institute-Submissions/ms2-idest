@@ -259,8 +259,14 @@ function addResult(result, i) {
     var ratingP = document.createElement('p');
     ratingP.setAttribute('class', 'align-self-center');
     var rating;
+    var star;
+    var starIcon = '&#10029'; 
+    var starText;
     if (result.rating) {
-        rating = document.createTextNode(result.rating + '&#10029');
+        rating = document.createTextNode(result.rating);
+        star = document.createElement('span');
+        star.setAttribute('class', 'star');
+        starText = document.createTextNode(starIcon);
         } else {
         rating = document.createTextNode('');
         }
@@ -268,7 +274,9 @@ function addResult(result, i) {
     iconFlag.appendChild(icon);
     nameDiv.appendChild(name);
     addressDiv.appendChild(address);
+    star.appendChild(starText);
     ratingP.appendChild(rating);
+    ratingP.appendChild(star);
     ratingDiv.appendChild(ratingP);
     
     //Append each created element into the card to be displayed.
