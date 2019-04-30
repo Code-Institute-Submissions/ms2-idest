@@ -76,7 +76,11 @@
 .placeIcon {
     width: 2.8em;
     height: 2.5em;
-    margin: $standard-margin;
+    margin: 0em;
+    @media (min-width: $medium-screen) {
+        margin: $standard-margin;
+    }
+    
 }
 .card {
     margin-bottom: 0.623em;
