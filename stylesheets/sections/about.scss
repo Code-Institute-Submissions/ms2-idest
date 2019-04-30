@@ -1,12 +1,12 @@
 @import "../globals/variables";
 
 /*---------------------------About*/
-#about {
-    text-align: center;
-    h1, h3, p {
+#about
+    .about-text{
+        text-align: center;
         margin: $standard-margin;
         padding: $standard-margin;
-}   }
+}     
 
 /*---------------------------Carousel*/
 .carousel-item
