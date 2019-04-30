@@ -101,7 +101,7 @@ function initMap() {
 // Also center and zoom the map on the given country.
 function setAutocompleteCountry() {
     var country = document.getElementById('country').value;
-    
+ 
     if (country == 'all') {
         autocomplete.setComponentRestrictions({'country': []});
         map.setCenter({lat: 15, lng: 0});
@@ -110,7 +110,10 @@ function setAutocompleteCountry() {
             autocomplete.setComponentRestrictions({'country': country});
             map.setCenter(countries[country].center);
             map.setZoom(countries[country].zoom);
+            document.getElementById('autocomplete').value = '';
+           
         }
+    
     clearResults();
     clearMarkers();
 }
@@ -238,7 +241,7 @@ function addResult(result, i) {
     
     //Creating div for the name and address of the venue.
     var listingDiv = document.createElement('div');
-    listingDiv.setAttribute('class','listing col-8');
+    listingDiv.setAttribute('class','listing col-7');
     var nameDiv = document.createElement('p');
     nameDiv.setAttribute('class', 'font-weight-bold')
     var addressDiv = document.createElement('p');
@@ -252,12 +255,12 @@ function addResult(result, i) {
     //Creating div for ratings. Check the listing has a rating
     //and if not display empty string.
     var ratingDiv = document.createElement('div');
-    ratingDiv.setAttribute('class','rating col-2 d-flex');
+    ratingDiv.setAttribute('class','rating col-3 d-flex');
     var ratingP = document.createElement('p');
     ratingP.setAttribute('class', 'align-self-center');
     var rating;
     if (result.rating) {
-        rating = document.createTextNode(result.rating);
+        rating = document.createTextNode(result.rating + '&#10029');
         } else {
         rating = document.createTextNode('');
         }
