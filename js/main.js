@@ -260,7 +260,7 @@ function addResult(result, i) {
     ratingP.setAttribute('class', 'align-self-center');
     var rating;
     var star;
-    var starIcon = '&#10029'; 
+    var starIcon = '&#10029;'; 
     var starText;
     if (result.rating) {
         rating = document.createTextNode(result.rating);
