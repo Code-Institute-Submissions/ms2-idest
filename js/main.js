@@ -39,7 +39,7 @@ var countries = {
         center: {lat: -40.9, lng: 174.9},
         zoom: 5
     },
-    'ir': {
+    'ie': {
         center: {lat: 53.3, lng: -6.2},
         zoom: 5
     },
