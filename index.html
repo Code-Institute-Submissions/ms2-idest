@@ -190,10 +190,9 @@
             <div id="main-buttons">
                 <div class="container">
                     
-                    <form id="country-form">
                         <div id="controls">
                     
-                            <select id="country">
+                            <select id="country" class="form-control">
                                 <option value="all">All</option>
                                 <option value="au">Australia</option>
                                 <option value="br">Brazil</option>
@@ -203,7 +202,7 @@
                                 <option value="mx">Mexico</option>
                                 <option value="ng">Nigeria</option>
                                 <option value="nz">New Zealand</option>
-                                <option value="ir">Ireland</option>
+                                <option value="ie">Ireland</option>
                                 <option value="it">Italy</option>
                                 <option value="za">South Africa</option>
                                 <option value="es">Spain</option>
@@ -219,9 +218,6 @@
                             <input id="autocomplete" class="form-control" placeholder="Enter a city" type="text" />
                         </div>
               
-                    </form>
-                    <!--#country-form-->
-                    
                     <!--POI buttons-->
                     <div class="justify-content-center row">
         
@@ -310,7 +306,7 @@
         <!--End of Find-->
         
         <!--Book-->
-        <section id="book">
+        <section id="book" class="form-bg">
             <div class="container">
           
                 <div class="booking-text">
@@ -319,7 +315,7 @@
                     plan and book your next city break.</p>
                 </div>
          
-                <div class="row form-bg">
+                <div class="row">
       
                     <form id="booking-form" onsubmit="return sendEmail(this)" method="POST" class="col-10 offset-1">
                         <div class="form-group">
@@ -384,24 +380,7 @@
         
     </div>
     <!--./container-fluid-->
-  
-    <!--Scripts-->
-    <!--JQuery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!--Popper JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <!--Bootstrap JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!--Google Maps API-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbWOx4Kt0jFBGSc1PGJpIFQJlzWm_Bk5s&callback=initMap&libraries=places" async defer></script>
-    <!--Custom JS-->
-    <script src="js/main.js" type="text/javascript"></script>
-    <script src="js/alert.js" type="text/javascript"></script>
-    <script src="js/topPage.js" type="text/javascript"></script>
-    
-</body>
-
-<footer class="footer-container">
+  <footer class="footer-container">
     <div class="row">
         <div class="col-xs-12 col-md-4">
             
@@ -438,6 +417,22 @@
         
     </div> 
     <!--./row-->
-</footer>
+  </footer>
+
+    <!--Scripts-->
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--Popper JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Google Maps API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbWOx4Kt0jFBGSc1PGJpIFQJlzWm_Bk5s&callback=initMap&libraries=places" async defer></script>
+    <!--Custom JS-->
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/alert.js" type="text/javascript"></script>
+    <script src="js/topPage.js" type="text/javascript"></script>
+    
+</body>
 
 </html>
