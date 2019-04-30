@@ -4,6 +4,7 @@ var results = {};
 var autocomplete;
 var countryRestrict = {'country': 'uk'};
 var MARKER_PATH = '/ms2-idest/assests/images/markers/red_marker';
+var goldStar = '/ms2-idest/assests/images/gold-star.png';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
 var countries = {
@@ -260,13 +261,13 @@ function addResult(result, i) {
     ratingP.setAttribute('class', 'align-self-center');
     var rating;
     var star;
-    var starIcon = '&#10029;'; 
-    var starText;
+    var starImgEl;
     if (result.rating) {
         rating = document.createTextNode(result.rating);
         star = document.createElement('span');
-        star.setAttribute('class', 'star');
-        starText = document.createTextNode(starIcon);
+        starImgEl = document.createElement('img');
+        starImgEl.src = goldStar;
+        starImgEl.setAttribute('class', 'star');
         } else {
         rating = document.createTextNode('');
         }
@@ -274,7 +275,7 @@ function addResult(result, i) {
     iconFlag.appendChild(icon);
     nameDiv.appendChild(name);
     addressDiv.appendChild(address);
-    star.appendChild(starText);
+    star.appendChild(starImgEl);
     ratingP.appendChild(rating);
     ratingP.appendChild(star);
     ratingDiv.appendChild(ratingP);
