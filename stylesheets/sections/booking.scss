@@ -15,22 +15,21 @@
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
-    margin-bottom: 30px;
-    margin-left: 0px;
 }
 .booking-text {
     text-align: center;
         h2, p {
-            margin: $standard-margin;
+            color: $white;
             padding: $standard-padding;
 }   }
-#booking-form
+#booking-form {
+    margin-bottom: $standard-margin;
     .form-group {
         display: block;
         margin: $standard-margin;
         label {
             color: $white;
-}   } 
+}   }   }
 #submit-form {
     background-color: $white;
     color: $black;

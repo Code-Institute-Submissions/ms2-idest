@@ -267,23 +267,21 @@ img {
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  margin-bottom: 30px;
-  margin-left: 0px; }
+  -o-transition: all .3s ease-in-out; }
 
 .booking-text {
   text-align: center; }
   .booking-text h2, .booking-text p {
-    margin: 1em;
+    color: #ffffff;
     padding: 1em; }
 
-#booking-form
-.form-group {
-  display: block;
-  margin: 1em; }
-  #booking-form
-  .form-group label {
-    color: #ffffff; }
+#booking-form {
+  margin-bottom: 1em; }
+  #booking-form .form-group {
+    display: block;
+    margin: 1em; }
+    #booking-form .form-group label {
+      color: #ffffff; }
 
 #submit-form {
   background-color: #ffffff;
