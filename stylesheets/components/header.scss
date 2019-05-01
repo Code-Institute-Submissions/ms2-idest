@@ -4,6 +4,9 @@
 .navbar-nav {
     margin: $standard-margin 0 0 $standard-margin ;
 }
+.navbar {
+    padding: 0rem 1rem;
+}
 .navbar-light 
     .navbar-nav 
         .nav-link {
@@ -12,13 +15,13 @@
 .navbar-brand
     img{
         width: 5em;
-        height: 3em;
+        height: 3.5em;
         &:hover {
             cursor: pointer;
         }
         @media (min-width: $small-screen) {
-            width: 9em;
-            height: 5em;
+            width: 6.5em;
+            height: 3.5em;
 }   }
 
 /*---------------------------Background Image*/
