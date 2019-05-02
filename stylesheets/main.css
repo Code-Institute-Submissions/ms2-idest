@@ -7,6 +7,9 @@
 .navbar-nav {
   margin: 1em 0 0 1em; }
 
+.navbar {
+  padding: 0rem 1rem; }
+
 .navbar-light
 .navbar-nav
 .nav-link {
@@ -15,15 +18,15 @@
 .navbar-brand
 img {
   width: 5em;
-  height: 3em; }
+  height: 3.5em; }
   .navbar-brand
   img:hover {
     cursor: pointer; }
   @media (min-width: 600px) {
     .navbar-brand
     img {
-      width: 9em;
-      height: 5em; } }
+      width: 6.5em;
+      height: 3.5em; } }
 
 /*---------------------------Background Image*/
 /* Backgroud image. Free for commercial use from https://pixabay.com/photos/city-frankfurt-cityscape-skyscraper-3660779/ */
@@ -201,6 +204,12 @@ body {
 .card-img {
   width: auto; }
 
+.star {
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+  width: 1.8em;
+  height: auto; }
+
 /*---------------------------InfoWindow*/
 #info-content
 table
@@ -255,7 +264,7 @@ img {
 /*---------------------------Colours*/
 /*---------------------------Booking*/
 .form-bg {
-  background: url("/ms2-idest/assests/images/bridge.jpg");
+  background: url("../../assests/images/bridge.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -273,12 +282,13 @@ img {
     padding-top: 1em; }
 
 #booking-form {
-  margin-bottom: 1em; }
+  background: rgba(255, 255, 255, 0.5); }
   #booking-form .form-group {
     display: block;
     margin: 1em; }
     #booking-form .form-group label {
-      color: #ffffff; }
+      color: #ffffff;
+      font-weight: bold; }
 
 #submit-form {
   background-color: #ffffff;

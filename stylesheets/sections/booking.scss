@@ -2,7 +2,7 @@
 
 /*---------------------------Booking*/
 .form-bg {
-    background:url("/ms2-idest/assests/images/bridge.jpg");
+    background:url("../../assests/images/bridge.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,12 +20,13 @@
             padding-top: $standard-padding;
 }   }
 #booking-form {
-    margin-bottom: $standard-margin;
+    background: rgba(255, 255, 255, 0.5);
     .form-group {
         display: block;
         margin: $standard-margin;
         label {
             color: $white;
+            font-weight: bold;
 }   }   }
 #submit-form {
     background-color: $white;
