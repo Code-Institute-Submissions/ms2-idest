@@ -25,7 +25,7 @@ img {
   @media (min-width: 600px) {
     .navbar-brand
     img {
-      width: 5em;
+      width: 6.5em;
       height: 3.5em; } }
 
 /*---------------------------Background Image*/
@@ -264,7 +264,7 @@ img {
 /*---------------------------Colours*/
 /*---------------------------Booking*/
 .form-bg {
-  background: url("../../assests/images/bridge.jpg");
+  background: url("/ms2-idest/assests/images/bridge.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -282,7 +282,7 @@ img {
     padding-top: 1em; }
 
 #booking-form {
-  background: rgba(255, 255, 255, 0.4); }
+  background: rgba(255, 255, 255, 0.5); }
   #booking-form .form-group {
     display: block;
     margin: 1em; }
