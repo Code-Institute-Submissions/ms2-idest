@@ -9,7 +9,7 @@ function validateForm (){
     var msg = document.forms["booking-form-form"]["message"].value;
     
     if (name == "") {
-        alert("Name must not be empty.");
+        alert("The name field cannot be empty.");
         return false;
     }
     if (name !== "") {
@@ -19,7 +19,7 @@ function validateForm (){
         }
     }
      if (email == "") {
-        alert("Email must not be empty.")
+        alert("The email field must not be empty.")
         return false;
     }
     if (email !== "") {
@@ -29,7 +29,7 @@ function validateForm (){
         }
     }
     if (phone == "") {
-        alert("Telephone field must not be empty");
+        alert("The telephone field must not be empty");
         return false;
     }
     if (phone !== "") {
