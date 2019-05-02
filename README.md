@@ -90,7 +90,7 @@ Below are a list of the programming languages, technologies and frameworks used 
 * [Google Fonts](https://fonts.google.com/)
 * Git
     * Version control
-* [GitHub](https://github.com)
+* [Github](https://github.com)
 * [Font Awesome](https://fontawesome.com/)
     * For social media icons and Glyphicons
 * Google Chrome Developer Tools
@@ -153,9 +153,32 @@ Manual testing was conducted to ensure the user story objectives where achieved.
 ## Deployment ##
 
 The website was created using Cloud9 IDE using Ubuntu with BASH. Git was used for version control and pushed to a repository hosted on 
-[GitHub](https://github.com).
+[Github](https://github.com).
 
-The website is deployed using GitHub pages [iDest](https://anthonynicklin.github.io/ms2-idest)
+The website is deployed using Github pages [iDest](https://anthonynicklin.github.io/ms2-idest)
+
+### How to deploy the code locally ###
+
+If you wish to run this code locally then please follow the instructions below. 
+
+1. Download the code form the Github repository at [https://anthonynicklin.github.io/ms2-idest](https://anthonynicklin.github.io/ms2-idest).
+2. Click on *Clone or download* then *Download ZIP*.
+..This will download the code into a ZIP folder locally on your computer.
+3. Uncompress the ZIP folder. 
+
+**Create your own Google API keys**
+In order to use this code for you own projects you will need to generate your own Google API key. This can be done by following the
+instructions on the [Google Maps API](https://developers.google.com/places/web-service/get-api-key) website. Once you have a API key
+continue to follow on with the steps below to add your key.
+4. Open the index.html page with an IDE or using a text editior of your chose.
+5. At the bottom of the page locate the Google API link in the script section and input your API key after `key=`.
+![Google API key location](assests/images/googleApiKey.png) *Make sure you save the file once you have added your key!*.
+
+The code is now ready to be run from either a web server or just locally from your computer. Configuring web servers is not in 
+scope of this README file but instructions are below if you wish to just run this locally.
+1. Change or open the directory the folder is in.
+2. Open the folder > right click on index.html > Open with > select a web browser.
+..The code will open up in the web browser and will be running locally on your computer.
 
 
 ## Credits ##
@@ -171,23 +194,32 @@ The website is deployed using GitHub pages [iDest](https://anthonynicklin.github
 
 ### Images ###
 
-Logo
+All images for this web site are being used under free commercial license at [Pixaby](https://pixabay.com/). Links to each image used are below.
+
+[New York skyline](https://pixabay.com/photos/new-york-skyline-new-york-city-city-668616/)
+[Hotel in carousel](https://pixabay.com/photos/hotel-hotel-rooms-home-decoration-1749602/)
+[Paris in carousel](https://pixabay.com/photos/paris-eiffel-tower-france-french-843229/)
+[Restaurant in carousel](https://pixabay.com/photos/restaurant-bar-counter-people-food-690569/)
+[Bar in carousel](https://pixabay.com/photos/buildings-night-urban-neon-sign-1245953/)
+
+### Logo ###
+
 Stamp picture was taken from [Pixaby](https://pixabay.com/vectors/stamp-postage-post-vintage-postal-303749/) under free commercial license.
-The writing of 'iDest' was screenshooted from Free Google fonts [font](https://fonts.google.com/specimen/Special+Elite), Special Elite and 
+The writing of 'iDest' was screenshooted from [Google Fonts](https://fonts.google.com/specimen/Special+Elite), Special Elite and 
 then overlayed using Abode Xd to create the final image.
 
-Markers
-Flags[Icons](https://icons8.com/icon/set/flag/color)
+### Markers ###
 
-Landing image of New York skyline [Pixaby]()
-Hotel in carousel [Pixaby]()
-Paris in carousel [Pixaby]()
-Restaurant in carousel [Pixaby]()
-Bar in carousel [Pixaby]()
+Flags where sourced under free commercial license at [Icons](https://icons8.com/icon/set/flag/color)
 
-Hotel icon [Icons](https://icons8.com/icon/set/hotel/color)
-Bar icon [Icons](https://icons8.com/icon/set/bar/color)
-Restaurant icon [Icons](https://icons8.com/icon/set/restaurant/color)
-Attractions icon [Icons](https://icons8.com/icon/set/fun-fair/color)
+
+### Icons ###
+
+The icons for the POI buttons where sourced under free commercial license.
+
+[Hotel icon](https://icons8.com/icon/set/hotel/color)
+[Bar icon](https://icons8.com/icon/set/bar/color)
+[Restaurant icon](https://icons8.com/icon/set/restaurant/color)
+[Attractions icon](https://icons8.com/icon/set/fun-fair/color)
 
 
