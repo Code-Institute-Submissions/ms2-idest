@@ -143,7 +143,6 @@ body {
 /*---------------------------Map*/
 #map {
   position: fixed;
-  top: 1em;
   width: 100%;
   height: 400px;
   margin-bottom: 1em;
@@ -155,7 +154,8 @@ body {
       position: -webkit-sticky !important;
       position: -moz-sticky;
       position: -ms-sticky;
-      position: -o-sticky; } }
+      position: -o-sticky;
+      top: 5.5em; } }
 
 /*---------------------------POI buttons*/
 #hotel-button, #bar-button, #restaurant-button, #attraction-button, #reset-button, #test-button {

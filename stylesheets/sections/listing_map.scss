@@ -22,7 +22,6 @@
 /*---------------------------Map*/
 #map {
     position: fixed;
-    top: $standard-padding;
     width: 100%;
     height: 400px;
     margin-bottom: $standard-margin;
@@ -34,6 +33,7 @@
         position: -moz-sticky;
         position: -ms-sticky;
         position: -o-sticky; 
+        top: 5.5em;
 }   }
 
 /*---------------------------POI buttons*/
