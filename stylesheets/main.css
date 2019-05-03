@@ -156,6 +156,9 @@ body {
       position: -ms-sticky;
       position: -o-sticky;
       top: 5.5em; } }
+  @media all and (min-width: 766px) and (-ms-high-contrast: none), (min-width: 766px) and (-ms-high-contrast: active) {
+    #map {
+      top: 0; } }
 
 /*---------------------------POI buttons*/
 #hotel-button, #bar-button, #restaurant-button, #attraction-button, #reset-button, #test-button {
