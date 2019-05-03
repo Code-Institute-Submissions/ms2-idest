@@ -157,8 +157,16 @@ Manual testing was conducted to ensure the user story objectives where achieved.
     * Modal can be closed by clicking on any part of the windown outside the modal.
     * Modal can be closed using the closed button or the cross button.
 
+On Internet Explorer the position property 'sticky' was causing the map to be dispalyed 5.5em down from the top. The the CSS value top: 5.5em
+is there to move the map down enough so the sticky navigation bar does not hide it when the user scrolls down. On IE, the browser was applying this
+regardless if the user had scrolled down the page. In order for IE browser to display top: 0, I had to add some CSS to target IE only. This issue
+also highlighted the fact that IE does not support the position property 'sticky' at this time of writing. I have only be able to test this on IE 11
+so far.
 
-## Deployment ##
+The map would failed to load randomly, occuring once every 10 times or so. The console would print a *'InitMap is not a function'*. I believe this
+was caused due to the loading order of the scripts in my index.html file. The Google Maps API script was set to load first, then main.js that actually held the initMap function. 
+I believe on occasion the Google Maps API script would finishing loading before the main.js file had. The Google Maps API would call the initMap function which had not
+fully loaded. By moving the Google Maps API script under the main.js script appears to have solve the problem as I have not encounted this issue again so far.
 
 The website was created using Cloud9 IDE using Ubuntu with BASH. Git was used for version control and pushed to a repository hosted on 
 [Github](https://github.com).
