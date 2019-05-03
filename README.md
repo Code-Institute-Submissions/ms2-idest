@@ -21,8 +21,7 @@ Below are user stories that were conducted in order to gain clear goals that nee
 4. I want to be able to use this on different sized screens.
 5. I want to be able to control the map.
 6. With a click or tap have more information displayed about the POI.
-7. On large screens show the results displayed in a formative way.
-8. I would like a form I can fill in in order to contact someone to discuss my break and book a trip.
+7. I would like a form I can fill in in order to contact someone to discuss my break and book a trip.
 
 
 The navigation bar is responsive having break points for smaller, medium and large screens. The navigation links disapear on screen width's below 992 pixals and a burger menu icon appears 
@@ -108,8 +107,6 @@ Platforms:
     * Firefox
     * Samsung web browser
 * iPad Mini
-    * Google Ghrome
-    * Firefox
     * Safari
 * MacBook Pro
     * Google Chrome
@@ -126,13 +123,16 @@ Platforms:
 
 Manual testing was conducted to ensure the user story objectives where achieved.
 1. Country
-    * All selected as the country and checked autocomplete shows cities from different countries.
+    * 'All' selected as the country and checked autocomplete shows cities from different countries.
     * Select each country and check autocomplete shows cities from the respected country.
     * When the country and city have been selected the map centers and zooms in on that city.
 2. POIs
     * Click on 'Find' in navbar.
     * When clicked each POI button dispalys the correct POIs repectivly. 
+    ..When 'All' and no city is selected.
+    ..When a country and city is selected.
     * Results from the last search are cleared before the next search results are dispalyed.
+    * Markers are cleared on the map before the next markers are displayed.
 3. Web application works across different device types
     * Load website on different device types and perform all testing that has been stated above.
 4. Booking form
@@ -148,6 +148,14 @@ Manual testing was conducted to ensure the user story objectives where achieved.
     * Switch between Map and Satellite views.
     * Click on a marker to display more information.
     * Click on a results card and display more information above the marker on the map.
+6. Booking Form
+    * Required fields must be filled in.
+    * Name field only excepts characters.
+    * Email field only excepts the format 'example@domain.com'.
+    * Telephone field only excepts numbers.
+    * On successful submission modal is dispalyed with thank you message.
+    * Modal can be closed by clicking on any part of the windown outside the modal.
+    * Modal can be closed using the closed button or the cross button.
 
 
 ## Deployment ##
