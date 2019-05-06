@@ -26,7 +26,8 @@
     color: $white;
         h2, p {
             padding-top: $standard-padding;
-}   }
+        }   
+}
 #booking-form {
     background: rgba(255, 255, 255, 0.5);
     .form-group {
@@ -35,7 +36,9 @@
         label {
             color: $white;
             font-weight: bold;
-}   }   }
+        }   
+    }   
+}
 #submit-form {
     background-color: $white;
     color: $black;
@@ -45,7 +48,8 @@
     &:hover {
         text-decoration: underline;
         cursor: pointer;
-}   }
+    }   
+}
 
 /*---------------------------Modal*/
 .modal {
@@ -75,10 +79,12 @@
     color: $black;
     text-decoration: none;
     cursor: pointer;
-}   }
+    }   
+}
 #close {
     color: $black;
     &:hover {
         text-decoration: underline;
         cursor: pointer;
-}   }
+    }   
+}
