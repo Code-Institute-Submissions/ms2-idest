@@ -168,6 +168,8 @@ was caused due to the loading order of the scripts in my index.html file. The Go
 I believe on occasion the Google Maps API script would finishing loading before the main.js file had. The Google Maps API would call the initMap function which had not
 fully loaded. By moving the Google Maps API script under the main.js script appears to have solve the problem as I have not encounted this issue again so far.
 
+## Deployment ##
+
 The website was created using Cloud9 IDE using Ubuntu with BASH. Git was used for version control and pushed to a repository hosted on 
 [Github](https://github.com).
 
@@ -187,8 +189,11 @@ In order to use this code for you own projects you will need to generate your ow
 instructions on the [Google Maps API](https://developers.google.com/places/web-service/get-api-key) website. Once you have a API key
 continue to follow on with the steps below to add your key.
 4. Open the index.html page with an IDE or using a text editior of your chose.
-5. At the bottom of the page locate the Google API link in the script section and input your API key after `key=`.
-![Google API key location](assests/images/googleApiKey.png) *Make sure you save the file once you have added your key!*.
+5. At the bottom of the page locate the Google Maps API link in the script section and input your API key after `key=`.
+
+![Google API key location](assests/images/googleApiKey.png) 
+
+*Make sure you save the file once you have added your key!*.
 
 The code is now ready to be run from either a web server or just locally from your computer. Configuring web servers is not in 
 scope of this README file but instructions are below if you wish to just run this locally.
@@ -212,11 +217,11 @@ scope of this README file but instructions are below if you wish to just run thi
 
 All images for this web site are being used under free commercial license at [Pixaby](https://pixabay.com/). Links to each image used are below.
 
-[New York skyline](https://pixabay.com/photos/new-york-skyline-new-york-city-city-668616/)
-[Hotel in carousel](https://pixabay.com/photos/hotel-hotel-rooms-home-decoration-1749602/)
-[Paris in carousel](https://pixabay.com/photos/paris-eiffel-tower-france-french-843229/)
-[Restaurant in carousel](https://pixabay.com/photos/restaurant-bar-counter-people-food-690569/)
-[Bar in carousel](https://pixabay.com/photos/buildings-night-urban-neon-sign-1245953/)
+* [New York skyline](https://pixabay.com/photos/new-york-skyline-new-york-city-city-668616/)
+* [Hotel in carousel](https://pixabay.com/photos/hotel-hotel-rooms-home-decoration-1749602/)
+* [Paris in carousel](https://pixabay.com/photos/paris-eiffel-tower-france-french-843229/)
+* [Restaurant in carousel](https://pixabay.com/photos/restaurant-bar-counter-people-food-690569/)
+* [Bar in carousel](https://pixabay.com/photos/buildings-night-urban-neon-sign-1245953/)
 
 ### Logo ###
 
@@ -233,9 +238,9 @@ Flags where sourced under free commercial license at [Icons](https://icons8.com/
 
 The icons for the POI buttons where sourced under free commercial license.
 
-[Hotel icon](https://icons8.com/icon/set/hotel/color)
-[Bar icon](https://icons8.com/icon/set/bar/color)
-[Restaurant icon](https://icons8.com/icon/set/restaurant/color)
-[Attractions icon](https://icons8.com/icon/set/fun-fair/color)
+* [Hotel icon](https://icons8.com/icon/set/hotel/color)
+* [Bar icon](https://icons8.com/icon/set/bar/color)
+* [Restaurant icon](https://icons8.com/icon/set/restaurant/color)
+* [Attractions icon](https://icons8.com/icon/set/fun-fair/color)
 
 
