@@ -14,14 +14,12 @@
             @media(min-width: $small-screen) {
                 float: left;
             }   
-            
         }
 .copyright a {
     color: $black; 
     @media (min-width: $small-screen) {
         float: right;
     }  
-    
 }
 .social-links {
     a {
@@ -38,9 +36,7 @@
         .fa-twitter:hover {
             color: $twitter;
         }
-
     }   
-    
 }
  
         
