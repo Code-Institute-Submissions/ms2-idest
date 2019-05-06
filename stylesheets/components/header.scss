@@ -11,7 +11,7 @@
     .navbar-nav 
         .nav-link {
             font-size: 1.3em;
-}
+        }
 .navbar-brand
     img{
         width: 5em;
@@ -22,7 +22,9 @@
         @media (min-width: $small-screen) {
             width: 6.5em;
             height: 3.5em;
-}   }
+        }   
+        
+    }
 
 /*---------------------------Background Image*/
 /* Backgroud image. Free for commercial use from https://pixabay.com/photos/city-frankfurt-cityscape-skyscraper-3660779/ */
