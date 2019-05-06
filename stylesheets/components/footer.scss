@@ -13,12 +13,16 @@
             height: 3em;
             @media(min-width: $small-screen) {
                 float: left;
-}   }
+            }   
+            
+        }
 .copyright a {
     color: $black; 
     @media (min-width: $small-screen) {
         float: right;
-}  }
+    }  
+    
+}
 .social-links {
     a {
         color: $black;
@@ -35,6 +39,8 @@
             color: $twitter;
         }
 
-}   }
+    }   
+    
+}
  
         
