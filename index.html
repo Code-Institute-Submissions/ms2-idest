@@ -96,12 +96,17 @@
         </div>
     
         <!--About-->
-        <section id="about">
+        <section>
+            
+            <div id="about">
+                <a name="target-about">&nbsp;</a>
+            </div>
             
             <div class="about-text">
                 
                 <h1>Explore</h1>
                 <h3>Life is to short to be sitting around!</h3>
+                <br>
                 <p>iDest is here to help you quickly and easily find attractions, restaurants, bars and hotetls.</p>
                 
             </div> 
@@ -174,11 +179,14 @@
         <!--End of Carousel-->
         
         <!--Find-->
-        <section id="find">
-  
+        <section>
+            <div id="find">
+                <a name="target-find">&nbsp;</a>
+             </div>
+             
             <div class="find-text">
               
-                <h2>Find your spot</h2>
+                <h1>Find your spot</h1>
                 <h3>Use are simple tool to find top venues</h3>
                 
                 <br>
@@ -189,61 +197,62 @@
                  by clicking on it's tile.</p>
             
             </div>
-            
-            <!-- #main wraps drop down, city input field, map, listings and info window-->
+        
+            <!-- #main-button wraps drop down and city input field-->
             <div id="main-buttons">
                 <div class="container">
+                        
+                    <div id="controls">
+                        
+                        <select id="country" class="form-control">
+                            <option value="all">All</option>
+                            <option value="au">Australia</option>
+                            <option value="br">Brazil</option>
+                            <option value="ca">Canada</option>
+                            <option value="fr">France</option>
+                            <option value="de">Germany</option>
+                            <option value="mx">Mexico</option>
+                            <option value="ng">Nigeria</option>
+                            <option value="nz">New Zealand</option>
+                            <option value="ie">Ireland</option>
+                            <option value="it">Italy</option>
+                            <option value="za">South Africa</option>
+                            <option value="es">Spain</option>
+                            <option value="pt">Portugal</option>
+                            <option value="us">U.S.A.</option>
+                            <option value="uk" selected>United Kingdom</option>
+                        </select>
+                                
+                    </div>
+                    <!--#/controls-->
                     
-                        <div id="controls">
-                    
-                            <select id="country" class="form-control">
-                                <option value="all">All</option>
-                                <option value="au">Australia</option>
-                                <option value="br">Brazil</option>
-                                <option value="ca">Canada</option>
-                                <option value="fr">France</option>
-                                <option value="de">Germany</option>
-                                <option value="mx">Mexico</option>
-                                <option value="ng">Nigeria</option>
-                                <option value="nz">New Zealand</option>
-                                <option value="ie">Ireland</option>
-                                <option value="it">Italy</option>
-                                <option value="za">South Africa</option>
-                                <option value="es">Spain</option>
-                                <option value="pt">Portugal</option>
-                                <option value="us">U.S.A.</option>
-                                <option value="uk" selected>United Kingdom</option>
-                            </select>
-                            
-                        </div>
-                        <!--#/controls-->
-                
-                        <div class="form-group">
-                            <input id="autocomplete" class="form-control" placeholder="Enter a city" type="text" />
-                        </div>
-              
+                    <div class="form-group">
+                        <input id="autocomplete" class="form-control" placeholder="Enter a city" type="text" />
+                    </div>
+                  
                     <!--POI buttons-->
                     <div class="justify-content-center row">
-        
+            
                         <button id="hotel-button" type="submit" class="btn" onClick="checkHotels">                  <!--Hotel button-->
                             <img src="assests/images/bed.png" alt="Bed"><br>Hotel</button>
-                          
+                              
                         <button id="bar-button" type="submit" class="btn" onClick="checkBars">                      <!--Bar button-->
                             <img src="assests/images/wine-glass.png" alt="Wine Glass"><br>Bars</button> 
-                  
-                
+                      
+                    
                         <button id="restaurant-button" type="submit" class="btn" onClick="checkRestaurants">         <!--Restaurant button-->
                             <img src="assests/images/dining-room.png" alt="Knife and Folk"><br>Restaurants</button>
-                            
+                                
                         <button id="attraction-button" type="submit" class="btn" onClick="checkAttractions">         <!--Attractions button-->
                             <img src="assests/images/ferris-wheel.png" alt="Ferris Wheel"><br>Attractions</button>
-        
+            
                     </div>
-                    
+                        
                 </div>
                 <!--./container-->
+                
             </div>
-            <!--#/main-->
+            <!--#/main-buttons-->
             
             <div id="main">
                 <div class="container">
@@ -310,7 +319,11 @@
         <!--End of Find-->
         
         <!--Book-->
-        <section id="book" class="form-bg">
+        <section class="form-bg">
+            <div id="book">
+                <a name="target-book">&nbps;</a>
+            </div>
+            
             <div class="container">
           
                 <div class="booking-text">
@@ -379,49 +392,53 @@
                 
             </div>
             <!--./container-->
+            
         </section>
-        <!--#/book-->
+        <!--End of Book-->
         
     </div>
     <!--./container-fluid-->
-  <footer class="footer-container">
-    <div class="row">
-        <div class="col-xs-12 col-md-4">
+    
+    <!--Footer-->
+    <footer class="footer-container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
             
-            <div id="logo-footer"> 
-                <a href="index.html"><img src="assests/images/idest_logo.png" alt="iDest logo"></a>
+                <div id="logo-footer"> 
+                    <a href="index.html"><img src="assests/images/idest_logo.png" alt="iDest logo"></a>
+                </div>
+            
             </div>
             
-        </div>
-            
-        <div class="col-xs-12 col-md-4">
-            <div class="social-links">
-                
-                <a href="https://en-gb.facebook.com" target="_blank">       <!--Facebook-->
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank">        <!--Instagram-->
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank">              <!--Twitter-->
-                    <i class="fab fa-twitter"></i>
-                </a>
-                
+            <div class="col-xs-12 col-md-4">
+                <div class="social-links">
+                    
+                    <a href="https://en-gb.facebook.com" target="_blank">       <!--Facebook-->
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">        <!--Instagram-->
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">              <!--Twitter-->
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    
+                </div>
+                <!--./social-links-->
             </div>
-            <!--./social-links-->
-        </div>
         
-        <div class="col-xs-12 col-md-4">
-         
-            <div class="copyright">
-                <a href="https://github.com/AnthonyNicklin" target="_blank">&copy;2019 Anthony Nicklin</a>
+            <div class="col-xs-12 col-md-4">
+             
+                <div class="copyright">
+                    <a href="https://github.com/AnthonyNicklin" target="_blank">&copy;2019 Anthony Nicklin</a>
+                </div>
+                
             </div>
-            
-        </div>
         
-    </div> 
-    <!--./row-->
-  </footer>
+        </div> 
+        <!--./row-->
+    </footer>
+    <!--End Footer-->
 
     <!--Scripts-->
     <!--JQuery-->

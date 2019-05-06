@@ -1,12 +1,18 @@
 @import "../globals/variables";
 
 /*---------------------------About*/
-#about
-    .about-text{
-        text-align: center;
-        margin: $standard-margin;
-        padding: $standard-margin;
-}     
+#about {
+    position: relative;
+    height: 3em;
+    a {
+        position: absolute;
+        top: -2em;
+}   } 
+.about-text{
+    text-align: center;
+    margin: $standard-margin;
+    padding: $standard-margin;
+}   
 
 /*---------------------------Carousel*/
 .carousel-item

@@ -48,14 +48,17 @@
 
 /*---------------------------Find*/
 #find {
-    text-align: center;
-    h4 {
-        margin-top: $standard-margin;
-    }
-    .find-text {
-        margin: $standard-margin;
-        padding: $standard-padding;
+    position: relative;
+    height: 3em;
+    a {
+        position: absolute;
+        top: -2em;
 }   }
+.find-text {
+    text-align: center;
+    margin: $standard-margin;
+    padding: $standard-padding;
+}   
 
 /*---------------------------Listing*/
 .logo-overlay {
