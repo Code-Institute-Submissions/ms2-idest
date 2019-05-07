@@ -30,16 +30,14 @@ appears when the user starts to scroll down the page for ease of navigation at a
 
 The [landing](https://anthonynicklin.github.io/ms2-idest/index.html) and [about](https://anthonynicklin.github.io/ms2-idest/index.html#about) sections combined make a visualy appealing
 start to the users experience. Designed to give the user a simple message to explore and explain what the web application is there to do. Below the [about](https://anthonynicklin.github.io/ms2-idest/index.html#about)
-section there is a carousel of images. The carousel is interactive with buttons on the botton and sides to allow the user to go back and foruth through the images. Each image
-has a small inspirational message at the botton which is displayed on medium and larger screens. On small screens the title of each image is only displayed as the extra content was not
-visually appealing when tested on smaller screens.
+section there is a carousel of images. The carousel is interactive with buttons on the bottom and sides to allow the user to go back and fourth through the images. Each image
+has a small title on the left hand-side to add a little content. 
 
 'Find your spot' is the message the user first sees on the [find](https://anthonynicklin.github.io/ms2-idest/index.html#find) section to encourage them to use the app. Simple instructions are written 
 to ensure there is no confusion on how to use the app. The country dropdown menu already has some pre-populated countries but also includes an 'All' option incase the country they wish to view is not listed.
 The input for the city destination uses Google Maps autocomplete function speeding up the process and also providing better useability on tounch screens as it can save further typing. The four POI buttons
 once tapped or clicked sets the application off bringing back the results. Each tile and marker when clicked or tapped presents a neat info window anchored above the POI marker on the map. Different font weight
 has been used in order to give the text in the tiles some hierarchy with out creating the font bigger. Shadow underneath each tile has also been applied to make them stand off the page.
-
 
 The [booking](https://anthonynicklin.github.io/ms2-idest/index.html#book) section provides a easy to use contact form that sends the users infomation via email in order for someone to contact them back 
 to discuss future trips. A image was used for the background of this section with the booking form itself having a white opacity to make it really stand out. Once the form has been submitted a modal is 
@@ -54,7 +52,7 @@ Features on this website are:
 * The links in the navigation when hovered over turn black to indicate which link the users cursor is over.
 * When hovering over any links the cursor changes from a pointer to a hand.
 * The carousel in the [about](https://anthonynicklin.github.io/ms2-idest/index.html#about) section has interactive buttons.
-* The country input field has a autocomplete function to aide the user in selecting/finding the city they which to visit.
+* The country input field has a autocomplete function to aide the user in selecting/finding the city they wish to visit.
 * Markers on the map when clicked or tapped bring up an info window with detailed information about that POI.
 * The results cards are linked to the map and when clicked or tapped will bring up it's respected info window for additional information.
 * The booking form uses custom input validation script to check the values before they are submitted.
@@ -167,6 +165,10 @@ was caused due to the loading order of the scripts in my index.html file. The Go
 I believe on occasion the Google Maps API script would finishing loading before the main.js file had. The Google Maps API would call the initMap function which had not
 fully loaded resulting in not being able to call the function. By moving the Google Maps API script under the main.js script appears to have solve the problem as I have not encounted this 
 issue so far with 30+ page reloads.
+
+HTML validation would pass values on required fields when they are incorrect. For example in the name field numbers are excepted. In the email field it will pass 'anthony@example' and the telephone
+field excepts just characters. I created my own input validation javaScript that once HTML has finished validating it will run and double check all is correct before submitting. If incorrect error 
+messages will be displayed as alert boxes to correct the user. 
 
 ## Deployment ##
 
