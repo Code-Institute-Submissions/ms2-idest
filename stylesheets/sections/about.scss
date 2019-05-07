@@ -16,20 +16,68 @@
 }   
 
 /*---------------------------Carousel*/
-.carousel-item
-    img {
-        background: linear-gradient(to bottom,
-        rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 250px;
-        @media (min-width: $small-screen) {
+#hotel-img {
+    background:url("../../assests/images/hotel-room-large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    @media (min-width: $small-screen) {
             height: 400px;
         }
-        transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -webkit-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-    }
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+#bar-img {
+    background:url("../../assests/images/bar2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    @media (min-width: $small-screen) {
+            height: 400px;
+        }
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+#restaurant-img {
+     background:url("../../assests/images/restaurant-bar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    @media (min-width: $small-screen) {
+            height: 400px;
+        }
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+#attraction-img {
+     background:url("../../assests/images/paris.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    @media (min-width: $small-screen) {
+            height: 400px;
+        }
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.carousel-caption {
+    right: 0;
+    left: 2em;
+    text-align: left;
+}
