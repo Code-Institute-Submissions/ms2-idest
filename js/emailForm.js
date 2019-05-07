@@ -14,7 +14,7 @@ function validateForm (){
     }
     if (name !== "") {
         if (!(/^[a-zA-Z][a-zA-Z]{0,20}$/.test(name))) {
-            alert("Can only container characters.");
+            alert("The name field can only container characters.");
             return false;
         }
     }
@@ -34,7 +34,7 @@ function validateForm (){
     }
     if (phone !== "") {
         if (!(/^[0-9]*$/.test(phone))) {
-            alert("Can only contain numbers");
+            alert("The telephon field can only contain numbers");
             return false;
         }
     }
