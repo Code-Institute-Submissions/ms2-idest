@@ -106,11 +106,11 @@ img {
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
-html, body {
+html {
+  overflow-x: hidden; }
+
+body {
   width: 100%;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif; }
 
 .container-fluid {
