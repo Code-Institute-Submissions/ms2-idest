@@ -239,12 +239,13 @@ function addResult(result, i) {
     var icon = document.createElement('img');
     icon.src = markerIcon;
     icon.setAttribute('class', 'placeIcon');
+    icon.setAttribute('alt', 'Flag');
     
     //Creating div for the name and address of the venue.
     var listingDiv = document.createElement('div');
     listingDiv.setAttribute('class','listing col-7');
     var nameDiv = document.createElement('p');
-    nameDiv.setAttribute('class', 'font-weight-bold')
+    nameDiv.setAttribute('class', 'font-weight-bold');
     var addressDiv = document.createElement('p');
     listingDiv.appendChild(nameDiv);
     listingDiv.appendChild(addressDiv);
@@ -268,6 +269,7 @@ function addResult(result, i) {
         starImgEl = document.createElement('img');
         starImgEl.src = goldStar;
         starImgEl.setAttribute('class', 'star');
+        starImgEl.setAttribute('alt', 'Star');
         } else {
         rating = document.createTextNode('');
         }
