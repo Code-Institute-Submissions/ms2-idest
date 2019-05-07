@@ -385,4 +385,3 @@ function clearResults() {
     
     results = {};
 }
-
