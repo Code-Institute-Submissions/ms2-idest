@@ -6,7 +6,7 @@
 ## Aim ##
 
 The aim of this project was to create and build a Single-Page-Application (SPA) interactive front-end website using Google 
-Maps API [iDest](https://anthonynicklin.github.io/ms2-idest/). The SPA would allow users to search for their next city break and 
+Maps API - [iDest](https://anthonynicklin.github.io/ms2-idest/). The SPA would allow users to search for their next city break and 
 help users find attractions, hotels, bars and restaurants.
 
 ## UX ##
@@ -25,28 +25,27 @@ Below are user stories that were conducted in order to gain clear goals that nee
 
 
 The navigation bar is responsive having break points for smaller, medium and large screens. The navigation links disapear on screen width's below 992 pixals and a burger menu icon appears 
-top right. When the burger icon is clicked, it brings a drop down menu with the navigation links displayed vertically down the left-hand side. There is a fixed "to the top button" that 
-appears when the user starts to scroll down the page to provide ease of navigation at all time and the navigation bar is also fixed to the top of the screen at all times.
+top right. When the burger icon is clicked, it brings a drop down menu with the navigation links displayed vertically down the left-hand side. There is a "to the top button" that 
+appears when the user starts to scroll down the page for ease of navigation at all times and the navigation bar is also fixed to the top of the screen.
 
 The [landing](https://anthonynicklin.github.io/ms2-idest/index.html) and [about](https://anthonynicklin.github.io/ms2-idest/index.html#about) sections combined make a visualy appealing
 start to the users experience. Designed to give the user a simple message to explore and explain what the web application is there to do. Below the [about](https://anthonynicklin.github.io/ms2-idest/index.html#about)
 section there is a carousel of images. The carousel is interactive with buttons on the botton and sides to allow the user to go back and foruth through the images. Each image
-has a small inspirational message at the botton which is display on medium and larger screens. On small screens only the title of each images is displayed as the writing was not
+has a small inspirational message at the botton which is displayed on medium and larger screens. On small screens the title of each image is only displayed as the extra content was not
 visually appealing when tested on smaller screens.
 
 'Find your spot' is the message the user first sees on the [find](https://anthonynicklin.github.io/ms2-idest/index.html#find) section to encourage them to use the app. Simple instructions are written 
-to ensure there is no confusion on how to use the app. The country dropdown menu already has some pre-populate countries but also includes an 'All' option incase the country they wish to view is not listed.
+to ensure there is no confusion on how to use the app. The country dropdown menu already has some pre-populated countries but also includes an 'All' option incase the country they wish to view is not listed.
 The input for the city destination uses Google Maps autocomplete function speeding up the process and also providing better useability on tounch screens as it can save further typing. The four POI buttons
-once tapped or clicked sets the application off bringing back the results. Each tile and marker when clicked or tapped presents a neat info window anchored about the POI marker on the map. Different font weight
-has been used in order to get the text in the tiles some hierarchy with out creating the font bigger. Shadow underneath each tile has also been applied to make them
-stand off the page.
+once tapped or clicked sets the application off bringing back the results. Each tile and marker when clicked or tapped presents a neat info window anchored above the POI marker on the map. Different font weight
+has been used in order to give the text in the tiles some hierarchy with out creating the font bigger. Shadow underneath each tile has also been applied to make them stand off the page.
 
 
 The [booking](https://anthonynicklin.github.io/ms2-idest/index.html#book) section provides a easy to use contact form that sends the users infomation via email in order for someone to contact them back 
-to discuss future trips. An image was use behind for the background of this section with the booking form itself having a white opacity to make it really stand out. Once the form has been submitted a modal is 
+to discuss future trips. A image was used for the background of this section with the booking form itself having a white opacity to make it really stand out. Once the form has been submitted a modal is 
 displayed thanking them.
 
-During the process of designing this SPA, finding images and icons that visualy went together was difficult and time consuming.
+During the process of designing this SPA, finding images and icons that visualy went together I found difficult and time consuming.
 
 ## Features ##
 
@@ -56,12 +55,12 @@ Features on this website are:
 * When hovering over any links the cursor changes from a pointer to a hand.
 * The carousel in the [about](https://anthonynicklin.github.io/ms2-idest/index.html#about) section has interactive buttons.
 * The country input field has a autocomplete function to aide the user in selecting/finding the city they which to visit.
-* Markers on the map when clicked or tapped bring up an info window with details information about that POI.
+* Markers on the map when clicked or tapped bring up an info window with detailed information about that POI.
 * The results cards are linked to the map and when clicked or tapped will bring up it's respected info window for additional information.
-* The booking form uses Bootstrap4 input validation to check values before they are submitted.
-* The booking form sends the information to an email using emailJS in order for the user to be contacted back.
-* A successful form submittion will dispaly a modal with a thank you message.
-* The modal can be close using the close cross, close button, or by clicking anywhere outside the modal.
+* The booking form uses custom input validation script to check the values before they are submitted.
+* The booking form sends the information to an email address using emailJS.
+* A successful form submission will display a modal with a thank you message.
+* The modal can be closed using the close cross, close button, or by clicking anywhere outside the modal.
 
 Future features
 * Travel blog describing experiences in different cities around the world.
@@ -139,13 +138,17 @@ Manual testing was conducted to ensure the user story objectives where achieved.
 4. Booking form
     * Use navigation link to 'Book' section.
     * Try to submit the empty form and verify that an error message about the required fields appears.
+    * Try to submit the form with an empty name field and verify that a relevant error message appears.
+    * Try to submit the form with invaild values in the name field and verify that a relevant error message appears.
+    * Try to submit the form with an empty email field and verify that a relevant error message appears.
     * Try to submit the form with an invalid email address and verify that a relevant error message appears.
+    * Try to submit the form with an empty telephone field and verify that a relevant error message appears.
     * Try to submit the form with an invalid telephone number and verify that a relevant error message appears.
     * Try to submit the form with all inputs valid. Modal should be displayed with thank you message.
     * Modal can be closed by clicking on any part of the windown outside the modal.
     * Modal can be closed using the closed button or the cross button.
 5. Map
-    * Contorls are shown on the map.
+    * Controls are shown on the map.
     * Drag the map around in all directions.
     * Zoom in and out of the map.
     * Switch between Map and Satellite views.
@@ -159,10 +162,11 @@ regardless if the user had scrolled down the page. In order for IE browser to di
 also highlighted the fact that IE does not support the position property 'sticky' at this time of writing. I have only be able to test this on IE 11
 so far.
 
-The map would failed to load randomly, occuring once every 10 times or so. The console would print a *'InitMap is not a function'*. I believe this
+The map would fail to load and render randomly, occuring once every 10 times or so. The console would print *'InitMap is not a function'*. I believe this
 was caused due to the loading order of the scripts in my index.html file. The Google Maps API script was set to load first, then main.js that actually held the initMap function. 
 I believe on occasion the Google Maps API script would finishing loading before the main.js file had. The Google Maps API would call the initMap function which had not
-fully loaded. By moving the Google Maps API script under the main.js script appears to have solve the problem as I have not encounted this issue so far 30+ page reloads.
+fully loaded resulting in not being able to call the function. By moving the Google Maps API script under the main.js script appears to have solve the problem as I have not encounted this 
+issue so far with 30+ page reloads.
 
 ## Deployment ##
 
@@ -175,12 +179,12 @@ The website is deployed using Github pages [iDest](https://anthonynicklin.github
 
 If you wish to run this code locally then please follow the instructions below. 
 
-1. Download the code form the Github repository at [https://anthonynicklin.github.io/ms2-idest](https://anthonynicklin.github.io/ms2-idest).
+1. Download the code from the Github repository at [https://anthonynicklin.github.io/ms2-idest](https://anthonynicklin.github.io/ms2-idest).
 2. Click on *Clone or download* then *Download ZIP*. This will download the code into a ZIP folder locally on your computer.
 3. Uncompress the ZIP folder. 
 
-**Create your own Google API keys**
-In order to use this code for you own projects you will need to generate your own Google API key. This can be done by following the
+#### Create your own Google API keys ####
+In order to use this code for your own projects you will need to generate your own Google API key. This can be done by following the
 instructions on the [Google Maps API](https://developers.google.com/places/web-service/get-api-key) website. Once you have a API key
 continue to follow on with the steps below to add your key.
 4. Open the index.html page with an IDE or using a text editior of your chose.
@@ -192,7 +196,7 @@ continue to follow on with the steps below to add your key.
 
 The code is now ready to be run from either a web server or just locally from your computer. Configuring web servers is not in 
 scope of this README file but instructions are below if you wish to run this locally.
-1. Change or open the directory the folder is located in.
+1. Change to or open the directory the folder is located in.
 2. Open the folder > right click on index.html > Open with > select a web browser. The code will open up in the web browser and will be running 
 locally on your computer.
 
@@ -201,16 +205,17 @@ locally on your computer.
 
 ### Code ###
 
-* [Scroll to top button](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
-    Used to create the 'to top button'.
-* [Goolge Map Hotel Search](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
-    Code was used and customised in order to achieve user story objectives.
-* [Modal](https://www.w3schools.com/howto/howto_css_modals.asp)
-    Modal for successful booking form submission.
+* Scroll to top button [w3schools.com](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+    * Used to create the 'to top button'.
+* Goolge Map Hotel Search [Google Maps examples](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
+    * Creates the search and then sends the query to Google. 
+    * Code was customised in order to achieve user story objectives.
+* Modal [w3schools.com](https://www.w3schools.com/howto/howto_css_modals.asp)
+    * Modal for successful booking form submission.
 
 ### Images ###
 
-All images for this web site are being used under free commercial license at [Pixaby](https://pixabay.com/). Links to each image used are below.
+All images for this web site are being used under free commercial license from [Pixaby](https://pixabay.com/). Links to each image are below.
 
 * [New York skyline](https://pixabay.com/photos/new-york-skyline-new-york-city-city-668616/)
 * [Hotel in carousel](https://pixabay.com/photos/hotel-hotel-rooms-home-decoration-1749602/)
@@ -220,8 +225,8 @@ All images for this web site are being used under free commercial license at [Pi
 
 ### Logo ###
 
-Images of the stamp was taken from [Pixaby](https://pixabay.com/vectors/stamp-postage-post-vintage-postal-303749/) under free commercial license.
-The writing of 'iDest' was screenshooted from [Google Fonts](https://fonts.google.com/specimen/Special+Elite), Special Elite and 
+Image of the stamp was taken from [Pixaby](https://pixabay.com/vectors/stamp-postage-post-vintage-postal-303749/) under free commercial license.
+The writing of 'iDest' was screenshooted from [Google Fonts](https://fonts.google.com/specimen/Special+Elite) Special Elite, and 
 then overlayed using Abode Xd to create the final image.
 
 ### Markers ###
@@ -230,7 +235,7 @@ Flags where sourced under free commercial license at [Icons](https://icons8.com/
 
 ### Icons ###
 
-The icons for the POI buttons where sourced under free commercial license.
+The icons for the POI buttons where sourced under free commercial license from [Icons](https://icons8.com).
 
 * [Hotel icon](https://icons8.com/icon/set/hotel/color)
 * [Bar icon](https://icons8.com/icon/set/bar/color)
