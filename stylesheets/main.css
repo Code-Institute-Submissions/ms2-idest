@@ -339,7 +339,7 @@ td {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 300px;
+  height: 100%;
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
@@ -352,7 +352,8 @@ td {
     padding-top: 1em; }
 
 #booking-form {
-  background: rgba(255, 255, 255, 0.5); }
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5em; }
   #booking-form .form-group {
     display: block;
     margin: 1em; }
