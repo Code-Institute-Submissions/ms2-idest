@@ -258,7 +258,7 @@ td {
 
 /*---------------------------Carousel*/
 #hotel-img {
-  background: url("../../assests/images/hotel-room-large.jpg");
+  background: url("/ms2-idest/assests/images/hotel-room-large.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -273,7 +273,7 @@ td {
       height: 400px; } }
 
 #bar-img {
-  background: url("../../assests/images/bar2.jpg");
+  background: url("/ms2-idest/assests/images/bar2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -288,7 +288,7 @@ td {
       height: 400px; } }
 
 #restaurant-img {
-  background: url("../../assests/images/restaurant-bar.jpg");
+  background: url("/ms2-idest/assests/images/restaurant-bar.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -303,7 +303,7 @@ td {
       height: 400px; } }
 
 #attraction-img {
-  background: url("../../assests/images/paris.jpg");
+  background: url("/ms2-idest/assests/images/paris.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
