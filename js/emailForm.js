@@ -13,8 +13,8 @@ function validateForm (){
         return false;
     }
     if (name !== "") {
-        if (!(/^[a-zA-Z][a-zA-Z ]+[a-zA-Z]{1,20}$/.test(name))) {
-            alert("Must only container characters.");
+        if (!(/^[a-zA-Z][a-zA-Z]{0,20}$/.test(name))) {
+            alert("Can only container characters.");
             return false;
         }
     }
@@ -24,7 +24,7 @@ function validateForm (){
     }
     if (email !== "") {
         if (!(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email))) {
-            alert("Incorrect format. Must contain @domain.")
+            alert("Incorrect format. Email should be eg. 'example@domain.com'")
             return false;
         }
     }
@@ -34,7 +34,7 @@ function validateForm (){
     }
     if (phone !== "") {
         if (!(/^[0-9]*$/.test(phone))) {
-            alert("Must only contain numbers");
+            alert("Can only contain numbers");
             return false;
         }
     }
