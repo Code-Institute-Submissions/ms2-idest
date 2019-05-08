@@ -41,7 +41,7 @@ The input for the city destination uses Google Maps autocomplete function speedi
 once tapped or clicked sets the application off bringing back the results. Each tile and marker when clicked or tapped presents a neat info window anchored above the POI marker on the map. Different font weight
 has been used in order to give the text in the tiles some hierarchy with out creating the font bigger. Shadow underneath each tile has also been applied to make them stand off the page.
 
-The [booking](https://anthonynicklin.github.io/ms2-idest/index.html#book) section provides a easy to use contact form that sends the users infomation via email in order for someone to contact them back 
+The [booking](https://anthonynicklin.github.io/ms2-idest/index.html#book) section provides a easy to use contact form that sends the users information via email in order for someone to contact them back 
 to discuss future trips. A image was used for the background of this section with the booking form itself having a white opacity to make it really stand out. Once the form has been submitted a modal is 
 displayed thanking them.
 
