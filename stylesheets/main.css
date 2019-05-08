@@ -31,16 +31,19 @@ img {
 /*---------------------------Background Image*/
 /* Backgroud image. Free for commercial use from https://pixabay.com/photos/city-frankfurt-cityscape-skyscraper-3660779/ */
 #landing-picture {
-  background: url("/ms2-idest/assests/images/newyork.jpg");
+  background: url("/../../assests/images/newyork.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 300px;
+  height: 250px;
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out; }
+  @media (min-width: 600px) {
+    #landing-picture {
+      height: 400px; } }
 
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
@@ -106,15 +109,8 @@ img {
 /*---------------------------Margins and paddings*/
 /*---------------------------Media Queries*/
 /*---------------------------Colours*/
-html {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden; }
-
 body {
-  font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden; }
+  font-family: 'Montserrat', sans-serif; }
 
 .container-fluid {
   padding: 0; }
