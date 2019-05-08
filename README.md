@@ -14,6 +14,8 @@ help users find attractions, hotels, bars and restaurants.
 Starting with a mobile first design approach to this project I started creating mockups and wireframes for mobile and small screens. I then moved onto creating mockups 
 and wireframes for medium and larger screens. The design of the site is modern, image rich, and easy to navigate and use. 
 
+Mockups and wireframes can be view via this link - [Mockups/wireframes](assests/mockups_wireframes).
+
 Below are user stories that were conducted in order to gain clear goals that needed to be achieved for this website.
 1. I want to chose the country and city where my city break will be.
 2. I want a map to center on the city I select.
@@ -233,7 +235,7 @@ then overlayed using Abode Xd to create the final image.
 
 ### Markers ###
 
-Flags where sourced under free commercial license at [Icons](https://icons8.com/icon/set/flag/color)
+Flags where sourced under free commercial license at [Icons](https://icons8.com/icon/set/flag/color).
 
 ### Icons ###
 
