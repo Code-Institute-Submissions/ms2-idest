@@ -133,9 +133,7 @@ Manual testing was conducted to ensure the user story objectives where achieved.
         * When a country and city is selected.
     * Results from the last search are cleared before the next search results are dispalyed.
     * Markers are cleared on the map before the next markers are displayed.
-3. Web application works across different device types
-    * Load website on different device types and perform all testing that has been stated above.
-4. Booking form
+3. Booking form
     * Use navigation link to 'Book' section.
     * Try to submit the empty form and verify that an error message about the required fields appears.
     * Try to submit the form with an empty name field and verify that a relevant error message appears.
@@ -145,16 +143,17 @@ Manual testing was conducted to ensure the user story objectives where achieved.
     * Try to submit the form with an empty telephone field and verify that a relevant error message appears.
     * Try to submit the form with an invalid telephone number and verify that a relevant error message appears.
     * Try to submit the form with all inputs valid. Modal should be displayed with thank you message.
-    * Modal can be closed by clicking on any part of the windown outside the modal.
+    * Modal can be closed by clicking on any part of the window outside the modal.
     * Modal can be closed using the closed button or the cross button.
-5. Map
+4. Map
     * Controls are shown on the map.
     * Drag the map around in all directions.
     * Zoom in and out of the map.
     * Switch between Map and Satellite views.
     * Click on a marker to display more information.
     * Click on a results tile and display more information above the marker on the map.
-    
+5. Web application works across different device types
+    * Load website on different device types and perform all testing that has been stated above.
 
 On Internet Explorer the position property 'sticky' was causing the map to be dispalyed 5.5em down from the top. The CSS value `top: 5.5em;`
 is there to move the map down enough so the sticky navigation bar does not hide it when the user scrolls down. On IE, the browser was applying this
@@ -162,15 +161,14 @@ regardless if the user had scrolled down the page. In order for IE browser to di
 also highlighted the fact that IE does not support the position property 'sticky' at this time of writing. I have only be able to test this on IE 11
 so far.
 
-The map would fail to load and render randomly, occuring once every 10 times or so. The console would print *'InitMap is not a function'*. I believe this
+The map would fail to load and render randomly, occuring once every 10 times or so. The console would print *'InitMap is not a function'*. The
 was caused due to the loading order of the scripts in my index.html file. The Google Maps API script was set to load first, then main.js that actually held the initMap function. 
-I believe on occasion the Google Maps API script would finishing loading before the main.js file had. The Google Maps API would call the initMap function which had not
-fully loaded resulting in not being able to call the function. By moving the Google Maps API script under the main.js script appears to have solve the problem as I have not encounted this 
-issue so far with 30+ page reloads.
+On occasion the Google Maps API script would finish loading before the main.js file had. The Google Maps API would call the initMap function which had not
+fully loaded resulting in not being able to call the function. By moving the Google Maps API script under the main.js script has resolve the issue.
 
-HTML validation would pass values on required fields when they are incorrect. For example in the name field numbers are excepted. In the email field it will pass 'anthony@example' and the telephone
-field excepts just characters. I created my own input validation javaScript that once HTML has finished validating it will run and double check all is correct before submitting. If incorrect error 
-messages will be displayed as alert boxes to correct the user. 
+HTML validation would pass values on required fields when they are actually incorrect. For example, in the name field numbers are excepted, in the email field it will pass 'anthony@example', and the telephone
+field can except just characters. I created my own input validation script that once HTML has finished validating it will run and double check all is correct before submitting. If incorrect an error 
+message will be displayed as an alert box to correct the user. 
 
 ## Deployment ##
 
@@ -183,7 +181,7 @@ The website is deployed using Github pages [iDest](https://anthonynicklin.github
 
 If you wish to run this code locally then please follow the instructions below. 
 
-1. Download the code from the Github repository at [https://anthonynicklin.github.io/ms2-idest](https://anthonynicklin.github.io/ms2-idest).
+1. Download the code from the Github repository at [https://github.com/AnthonyNicklin/ms2-idest](https://github.com/AnthonyNicklin/ms2-idest).
 2. Click on *Clone or download* then *Download ZIP*. This will download the code into a ZIP folder locally on your computer.
 3. Uncompress the ZIP folder. 
 
@@ -191,6 +189,7 @@ If you wish to run this code locally then please follow the instructions below.
 In order to use this code for your own projects you will need to generate your own Google API key. This can be done by following the
 instructions on the [Google Maps API](https://developers.google.com/places/web-service/get-api-key) website. Once you have a API key
 continue to follow on with the steps below to add your key.
+
 4. Open the index.html page with an IDE or using a text editior of your chose.
 5. At the bottom of the page locate the Google Maps API link in the script section and input your API key after `key=`.
 
