@@ -34,7 +34,7 @@ function validateForm (){
     }
     if (phone !== "") {
         if (!(/^[0-9]*$/.test(phone))) {
-            alert("The telephon field can only contain numbers");
+            alert("The telephone field can only contain numbers");
             return false;
         }
     }
