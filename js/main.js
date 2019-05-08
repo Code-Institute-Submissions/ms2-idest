@@ -272,6 +272,8 @@ function addResult(result, i) {
         starImgEl.setAttribute('alt', 'Star');
         } else {
         rating = document.createTextNode('');
+        star = document.createElement('span');
+        starImgEl = document.createTextNode('');
         }
     //Add listing variables into their elements.
     iconFlag.appendChild(icon);
