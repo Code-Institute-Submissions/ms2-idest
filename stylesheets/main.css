@@ -59,7 +59,7 @@ a
 img {
   width: 5em;
   height: 3em; }
-  @media (min-width: 600px) {
+  @media (min-width: 766px) {
     #logo-footer
     a
     img {
@@ -67,7 +67,7 @@ img {
 
 .copyright a {
   color: #000000; }
-  @media (min-width: 600px) {
+  @media (min-width: 766px) {
     .copyright a {
       float: right; } }
 

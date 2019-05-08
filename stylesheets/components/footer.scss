@@ -11,13 +11,13 @@
         img {
             width: 5em;
             height: 3em;
-            @media(min-width: $small-screen) {
+            @media(min-width: $medium-screen) {
                 float: left;
             }   
         }
 .copyright a {
     color: $black; 
-    @media (min-width: $small-screen) {
+    @media (min-width: $medium-screen) {
         float: right;
     }  
 }
