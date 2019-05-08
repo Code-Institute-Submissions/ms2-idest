@@ -128,7 +128,7 @@ Manual testing was conducted to ensure the user story objectives where achieved.
     * When the country and city have been selected the map centers and zooms in on that city.
 2. POIs
     * Click on 'Find' in navbar.
-    * When clicked each POI button dispalys the correct POIs repectivly. 
+    * When clicked each POI button dispalys the correct POIs respectively. 
         * When 'All' and no city is selected.
         * When a country and city is selected.
     * Results from the last search are cleared before the next search results are dispalyed.
@@ -167,8 +167,8 @@ On occasion the Google Maps API script would finish loading before the main.js f
 fully loaded resulting in not being able to call the function. By moving the Google Maps API script under the main.js script has resolve the issue.
 
 HTML validation would pass values on required fields when they are actually incorrect. For example, in the name field numbers are excepted, in the email field it will pass 'anthony@example', and the telephone
-field can except just characters. I created my own input validation script that once HTML has finished validating it will run and double check all is correct before submitting. If incorrect an error 
-message will be displayed as an alert box to correct the user. 
+field can except just characters. I created my own input validation script that also checks all fields are correct before submitting ([emailForm.js](js/emailForm.js). If incorrect an error message will be 
+displayed as an alert box to correct the user. 
 
 ## Deployment ##
 
@@ -229,7 +229,7 @@ All images for this web site are being used under free commercial license from [
 ### Logo ###
 
 Image of the stamp was taken from [Pixaby](https://pixabay.com/vectors/stamp-postage-post-vintage-postal-303749/) under free commercial license.
-The writing of 'iDest' was screenshooted from [Google Fonts](https://fonts.google.com/specimen/Special+Elite) Special Elite, and 
+The writing of 'iDest' was screenshot from [Google Fonts](https://fonts.google.com/specimen/Special+Elite) Special Elite, and 
 then overlayed using Abode Xd to create the final image.
 
 ### Markers ###
