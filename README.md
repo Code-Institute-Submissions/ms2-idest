@@ -167,7 +167,7 @@ On occasion the Google Maps API script would finish loading before the main.js f
 fully loaded resulting in not being able to call the function. By moving the Google Maps API script under the main.js script has resolve the issue.
 
 HTML validation would pass values on required fields when they are actually incorrect. For example, in the name field numbers are excepted, in the email field it will pass 'anthony@example', and the telephone
-field can except just characters. I created my own input validation script that also checks all fields are correct before submitting ([emailForm.js](js/emailForm.js). If incorrect an error message will be 
+field can except just characters. I created my own input validation script that also checks all fields are correct before submitting ([emailForm.js](js/emailForm.js)). If incorrect an error message will be 
 displayed as an alert box to correct the user. 
 
 ## Deployment ##
