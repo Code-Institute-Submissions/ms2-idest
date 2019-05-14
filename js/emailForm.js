@@ -13,7 +13,7 @@ function validateForm (){
         return false;
     }
     if (name !== "") {
-        if (!(/^[a-zA-Z][a-zA-Z]*\s{0,20}$/.test(name))) {
+        if (!(/^[a-zA-Z ]+$/.test(name))) {
             alert("The name field can only container characters.");
             return false;
         }
