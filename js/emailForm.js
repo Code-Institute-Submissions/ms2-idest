@@ -13,7 +13,7 @@ function validateForm (){
         return false;
     }
     if (name !== "") {
-        if (!(/^[a-zA-Z][a-zA-Z]{0,20}$/.test(name))) {
+        if (!(/^[a-zA-Z][a-zA-Z]*\s{0,20}$/.test(name))) {
             alert("The name field can only container characters.");
             return false;
         }
@@ -34,7 +34,7 @@ function validateForm (){
     }
     if (phone !== "") {
         if (!(/^[0-9]*$/.test(phone))) {
-            alert("The telephone field can only contain numbers");
+            alert("The telephone field can only contain numbers with no spaces");
             return false;
         }
     }
